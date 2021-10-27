@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>登录</title>
+<link type="text/css" rel="stylesheet" href="#" />
+<link href="/member/templets/style/reg.css" rel="stylesheet" />
+<script src="templets/js/j.js" language="javascript" type="text/javascript"></script>
+<script src="templets/js/base.js" language="javascript" type="text/javascript"></script>
+<script src='templets/js/CheckPassStrength.js' type="text/javascript" language="javascript"></script>
+<script type="text/javascript" language="javascript" src='templets/js/reg_new.js'></script>
+<script type="text/javascript" language="javascript">
+<!--
+var reMethod = "<?php echo ($cfg_soft_lang == 'utf-8') ? 'POST' : 'GET';?>",pwdmin = <?php echo $cfg_mb_pwdmin; ?>;
+
+function changeAuthCode() {
+	var num = 	new Date().getTime();
+	var rand = Math.round(Math.random() * 10000);
+	num = num + rand;
+	$('#ver_code').css('visibility','visible');
+	if ($("#vdimgck")[0]) {
+		$("#vdimgck")[0].src = "../include/vdimgck.php?tag=" + num;
+	}
+	return false;	
+}
+
+function hideVc()
+{
+	$('#ver_code').css('visibility','hidden');
+}
+
+
+$(document).ready(function(){ 
+	$("#passwordLevel").removeClass().addClass("rank r0");
+	$("#vdcode").focus(function(){
+	  var leftpos = $("#vdcode").position().left;
+	  var toppos = $("#vdcode").position().top - 42;
+	  $('#ver_code').css('left', leftpos+'px');
+	  $('#ver_code').css('top', toppos+'px');
+	  $('#ver_code').css('visibility','visible');
+	});
+	$("input[type='password']").click(function(){
+	  hideVc()
+	});
+	$("#txtUsername").click(function(){
+	  hideVc()
+	});
+	$("input[type='radio']").focus(function(){
+	  hideVc()
+	});
+	/*
+	$("#vdcode").blur(function(){
+		  $('#ver_code').css('visibility','hidden');
+	});
+	*/
+})
+
+-->
+</script>
+</head>
+<body>
+    <div class="mod-header grid-96">
+        <div class="logo">
+            <a href="http://www.baidu.com"><img alt="baidu" src="/member/templets/images/logo.gif"></a>
+        </div>
+    </div>
+    <div class="mod-bread clearfix">
+        <div class="grid-96 mod-navbar">
+            <div class="bread-left clearfix">
+                <a class="mail_reg_tab active" id="mailRegTab" >登录</a>
+            </div>
+            <div class="bread-right">
+                没有帐号？<a id="floatLogin" href="/member/index_do.php?fmdo=user&dopost=regnew">马上注册</a>
+            </div>
+        </div>
+    </div>
+    
+<div id="normal_reg" class="mod-regcontent grid-96 tang-pass-reg" style="display: block;">
+<form name='form1' method='POST' action='index_do.php'>
+      <input type="hidden" name="fmdo" value="login">
+      <input type="hidden" name="dopost" value="login">
+      <input type="hidden" name="gourl" value="<?php if(!empty($gourl)) echo $gourl;?>">
+      <input type="hidden" value="604800" name="keeptime" id="ra2"/>
+<p class="pass-form-item pass-form-item-email" style="display:block">
+<label id="TANGRAM__4__emailLabel" class="pass-label pass-label-email" for="TANGRAM__4__email">用户名</label>
+<input id="txtUsername" class="pass-text-input pass-text-input-email" type="text" name="userid">
+</p>
+
+<p id="TANGRAM__4__passwordWrapper" class="pass-form-item pass-form-item-password" style="display:block">
+<label id="TANGRAM__4__passwordLabel" class="pass-label pass-label-password">密码</label>
+<input type="password" onkeyup="setPasswordLevel(this, document.getElementById('passwordLevel'));" id="txtPassword" name="pwd" class="pass-text-input pass-text-input-password">
+</p>
+
+
+
+<p id="TANGRAM__4__verifyCodeImgWrapper" class="pass-form-item pass-form-item-verifyCode" style="display: block;">
+<label id="TANGRAM__4__verifyCodeLabel" class="pass-label pass-label-verifyCode" for="TANGRAM__4__verifyCode">验证码</label>
+<input type="text" class="intxt w200" style="width: 50px; text-transform: uppercase;" id="vdcode" name="vdcode"/>
+<span>
+<img id="vdimgck" align="absmiddle" onclick="this.src=this.src+'?'" style="cursor: pointer;" alt="看不清？点击更换" src="../include/vdimgck.php"/>
+</span>
+<a href="javascript:void(0)" onclick="changeAuthCode();">看不清？</a>
+
+</p>
+
+<p id="TANGRAM__4__submitWrapper" class="pass-form-item pass-form-item-submit">
+<input class="pass-button pass-button-submit" id="btnSignCheck" type="submit" value="登录">
+
+</p>
+
+</form>
+</div>    
+    
+    <div class="mod-regcontent grid-96" id="normal_reg"></div>
+    <div class="grid-96 phone_reg" id="phone_reg">
+    </div>
+    <div class="mod-footer grid-96">&copy;2013 Baidu</div>
+</body>
+</html>

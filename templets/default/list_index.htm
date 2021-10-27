@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>{dede:global.cfg_webname/}</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba2.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba3.css" />
+<link rel="stylesheet" href="/templets/default/style/skin.css" />
+<script type="text/javascript" src="/member/templets/js/checkSubmit.js"></script>
+</head>
+
+<body>
+{dede:include filename="head.htm"/}
+
+<div id="container">
+		<div class="above_nav" style="display:none">	</div>
+<div id="frs_nav" class="frs_nav_3" dr="B">
+	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/" title="{dede:global.cfg_webname/}吧">{dede:global.cfg_webname/}吧</a> </li></ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon refresh" id="refresh" href="&tp=0&pn=0" ></a> </li><li class='divide_line'></li><li class=" last" > <a class="nav_icon toggle" href="#" id="frs_old_version" ></a> </li> </ul><ul class="nav_center"> <li class=" first" > <a href="#" class="icon_add_post diff_tab" title="发表新贴" alt="发表新贴" id="add_post_btn" >发表新贴</a> </li> </ul> </div> </div>
+
+            <div class="dir_rank">
+
+            <div>{dede:sql sql="select count(ID) as c from dede_archives where channel=1"}共有主题：[field:c/]
+个{/dede:sql}</div>
+            <div class="rank_sep"></div>
+            <div class="week_rank">评论数：<span class="rank_number">{dede:sql sql="select count(id) as c from dede_feedback"}[field:c/]
+个{/dede:sql}</span></div>
+                        <div class="rank_sep"></div>
+            <div class="month_rank">会员数：<span class="rank_number">{dede:sql sql="select count(mid) as c from dede_member"}[field:c/]名{/dede:sql}</span></div>
+                                </div>
+    	<div class="frs_content clearfix" >
+	    <div class="contet_wrap" id="contet_wrap">
+            <div id="content_leftList" class="content_leftList clearfix">
+<!--    <script>
+        Interview = window.Interview || {};
+        FrsThreadItem = window.FrsThreadItem || {};
+        FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
+        FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
+        Interview.stopGetData = !!"0";
+        FrsThreadItem.LivePost.data.stopGetData = !!"0";
+    </script>-->
+
+<ul id="thread_list" class="threadlist">
+{dede:freelist/}
+</ul>
+<script>if(typeof PDC != 'undefined'){PDC.mark('thread_list_end');}</script><div id="frs_list_pager" class="pager clearfix">
+<ul>
+{dede:pagelist listitem="info,index,end,pre,next,pageno" listsize="5"/}
+</ul>
+</div></div>        </div>
+		<div id="aside" class="aside">
+			<div class="region_2 sign_mod2" id="sign_mod">
+    <div class="sign_tip_container">
+        <div class="j_succ_info sign_succ2" style="display:none">
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
+	<div class="region_header">
+		<div class="region_op j_op"> </div>
+		<div class="region_title region_icon j_title">本吧信息</div>
+	</div>
+	<div class="region_cnt">
+		
+
+	<h4>吧主：</h4>
+	<ul>
+			<li>
+  		     Admin
+  		  	</li>
+      <li style="display:none">
+      <span id="tbManagerApply">
+            </span>
+  	</li>
+		<li id="tbManagerCandidatesNum" style="display:none">
+				</li>
+	</ul>
+<h4>欢迎最新会员：</h4>
+<ul>
+	<li>
+	{dede:sql sql="select uname from dede_member order by mid desc limit 1"}[field:uname/]{/dede:sql}
+	</li>
+</ul>
+<h4>共有会员：</h4>
+<ul>
+	<li>
+	{dede:sql sql="select count(mid) as c from dede_member"}[field:c/]名{/dede:sql}
+	</li>
+</ul>
+<h4 class="forum_dir_info">今日发布主题：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+{dede:sql sql="SELECT count( id ) AS c FROM dede_archives WHERE pubdate > UNIX_TIMESTAMP(CURDATE())"}[field:c/]篇{/dede:sql}
+	</li>
+</ul>
+<h4 class="forum_dir_info">本月发布主题：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+{dede:sql sql="SELECT count( ID ) AS c FROM dede_archives WHERE
+FROM_UNIXTIME(pubdate,'%m' ) =month(curdate( )) "}[field:c
+/]篇{/dede:sql}
+	</li>
+</ul>
+
+
+ 
+	</div>
+	<div class="region_footer"></div>
+</div>
+
+<div id="zyq" class="zyq_2" ><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
+<div class="tl">
+	<div class="mod_edit_wrap"></div>
+	<div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">分类</span></div>
+</div>
+<div class="cnt">
+<ul class="zyq_mod_link_items">
+{dede:channel type='top' row='10'}
+<li><a href='[field:typeurl/]'>[field:typename/]</a></li>
+{/dede:channel}
+</ul>
+</div>
+</div><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
+	<div class="tl"><div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情链接</span></div>
+	<div class="cnt">
+	
+	<ul class="zyq_mod_friend_items">
+    <li><a href='http://www.dedemao.com'>织梦猫</a></li>
+{dede:flink linktype = '2' row='24'/}
+
+	  
+	</ul>
+	
+	</div>
+</div></div>
+
+	
+		
+
+		</div>
+	</div>	
+</div>
+
+<div id="editor" class="frs_rich_editor">
+<a name="sub"></a>
+<div id="_fatie">
+<form autocomplete="off" method="post" id="pt1361001960036">
+        <div id="edit_parent">
+            <div class="new_tiezi_tip">
+                <div class="editor_title_txt">发表回复</div>
+            </div>
+            <table width="100%" cellspacing="0" cellpadding="3" border="0">
+                <tbody><tr style="display:none;" id="tt1361001960036">
+                    <td width="49" valign="top" nowrap="" style="line-height: 32px; color: rgb(204, 204, 204);">标&#12288;题:</td><td style="color: rgb(204, 204, 204);">
+                        <a name="ju"></a>
+                        <div id="td1361001960036">
+                            <input type="text" value="" class="edit_title_field" name="title" id="title">
+                        </div>
+                        <div class="postErrorTitle"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td width="49" valign="top" nowrap="" style="color: rgb(204, 204, 204);">内&#12288;容:</td>
+                    <td style="color: rgb(204, 204, 204);">
+                        <div style="position:relative;z-index:1000"><div class="editor_tip_show" id="ebt1361001960036"><div class="editor_banned_tip_info">本吧发贴，请先 <a href="/member/login.php">登录</a> | <a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew">注册</a>&nbsp;</div></div></div>
+                        <div style="position:relative;" id="eInput1361001960036"><div class="tb-editor-wrapper tb-editor-wrapper-disabled" style="width: 633px;"><div class="tb-editor-overlay" style="display: none;"><span class="close"></span><span class="arrow"></span><div class="overlay-content"></div></div><div class="tb-editor-overlay" style="display: none;"><span class="arrow"></span><div class="overlay-content"></div></div><div class="tb-editor-toolbar tb-editor-toolbar-disabled"><span data-cmd="image" class="image"></span><label></label><span data-cmd="flash" class="flash"></span><label></label><span data-cmd="music" class="music"></span><label></label><span data-cmd="smiley" class="smiley"></span><label></label><span data-cmd="picasso" class="picasso"></span><label></label><span data-cmd="unabled_cut" class="cut_screen"></span></div><div class="tb-editor-editarea-wrapper"><div class="tb-editor-editarea tb-editor-editarea-disabled" style="height: auto; min-height: 193px;"></div></div></div></div>
+
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td style="color: rgb(204, 204, 204);">&nbsp;</td>
+                    <td class="pt_submit" style="color: rgb(204, 204, 204);">
+                        <input type="submit" value=" 发 表 " class="subbtn_bg" disabled="disabled">
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </form>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript">CheckLogin2();</script>
+{dede:include filename="footer.htm"/}
+
+</div>
+</div>
+
+<script src="/templets/default/js/tieba.js"></script>
+<!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+
+<script src="/templets/default/js/tieba2.js"></script>
+<!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
+
+
+<script>
+	   _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version){			
+			var frsNavParams = {
+				forum : {
+					id : 1400850,
+					name :'织梦',
+					name_u :'%D6%AF%C3%CE',
+					forbid_flag : 0				},
+				page : "main",
+				type : "album",
+				tbs : ''
+			};  	  
+			_.Module.use('common/widget/Tbnav', ['frs_nav',frsNavParams,version], function(){
+					common.Tbnav.run();
+				});
+		});	
+    $(document).ready(function(){
+        $(".signrank_crown").click(function(){
+             Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
+             window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
+             return false;
+        });
+    });
+</script>
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+<script src="/templets/default/js/tieba3.js"></script>
+<script>
+if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
+  TbCom.defaultLogicInit(PageData.user, 'forum');
+}
+</script>
+<!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
+<script id="pageconf_tbskin_version" type="text/html">20130201</script>
+<script>
+	if(!PageData.is_ipad){
+		(function() {
+			var forumSkinId = 202;
+			//创建一个全局的userSkinManager，用于页面皮肤设置操作
+			var userSkinManager = window.userSkinManager = new UserSkinManager();
+			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
+		})();
+	}
+</script>
+
+<script>
+	if(!PageData.is_ipad){
+		window.Common_GoTop();
+	}
+</script>
+</body>
+</html>

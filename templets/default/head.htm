@@ -1,0 +1,62 @@
+<script language="javascript" type="text/javascript" src="{dede:global.cfg_cmsurl/}/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+	
+	function CheckLogin2(){
+	  var taget_obj = document.getElementById('_fatie');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("{dede:global.cfg_cmspath/}/member/ajax_fatie.php");
+	  DedeXHTTP = null;
+	}	
+-->
+</script>
+<div id="com_userbar" style="z-index: 10005;">
+<div id="_userlogin">
+<ul>
+<li class="u_login">
+<a href="/member/login.php">登录</a>
+</li>
+<li class="u_reg">
+<a href="{dede:global.cfg_memberurl/}/index_do.php?fmdo=user&dopost=regnew">注册</a>
+</li>
+</ul>
+</div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script>
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+
+	<div class="wrap_clear"></div>
+<div id="head" class="search search_theme_2 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+      <form  name="formsearch" action="{dede:global.cfg_cmsurl/}/plus/search.php">
+<input type="hidden" name="kwtype" value="0" />      
+              				<input size="42" tabindex="1" id="search-keyword" name="q" class="s_ipt i tb_header_search_input" maxlength="100" value="{dede:global.cfg_webname/}" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="吧内搜索" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"></span>
+                  </form>
+  </div>
+
+</div>

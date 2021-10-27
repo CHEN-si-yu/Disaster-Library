@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset={dede:global.cfg_soft_lang/}" />
+<title>搜索页_{dede:global.cfg_webname/}</title>
+<meta name="keywords" content="{dede:field name='keywords'/}" />
+<meta name="description" content="{dede:field name='description' function='html2text(@me)'/}" />
+
+<!--[if lt IE 9]>
+<script>
+(function(){
+    var tags = ['header','footer','figure','figcaption','details','summary','hgroup','nav','aside','article','section','mark','abbr','meter','output','progress','time','video','audio','canvas','dialog'];
+    for(var i=tags.length - 1;i>-1;i--){ document.createElement(tags[i]);}
+})();
+</script>
+<![endif]-->
+<style>
+header,footer,section,article,aside,nav,figure{display:block;margin:0;padding:0;border:0;}
+</style>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/search.css" />
+<link rel="stylesheet" href="/templets/default/style/search2.css" />
+</head>
+<body>
+
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+<div id="f_header">
+<div id="head" class="search search_theme_1 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+<form>
+      				<input size="42" tabindex="1" id="search-keyword" name="q" class="s_ipt i tb_header_search_input" maxlength="100" value="{dede:global name='keyword' function='RemoveXSS(@me)'/}" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="吧内搜索" class="s_btn" /></span>
+          </form>
+    <p class="switch_radios"  >
+              <input type="radio" name="tb" class="nowtb" checked="checked" /><label for="nowtb">吧内搜索</label>
+    </p>
+  </div>
+    
+      
+</div>
+
+</div>
+<div id="j_search_nav" class="search_nav">
+<div class='h_nav_content'><a href='/'>{dede:global.cfg_webname/}</a><span class='n_split'>&gt;</span><span>搜索结果</span></div>
+</div>
+<div class="s_container clearfix">
+<div style="text-align:left;" id="log"></div>
+<div id="set_history" style="display:none;"></div>
+<div class="s_main">
+<div class="s_inforum s_h_no_result">
+搜索 <strong style="color:red;">{dede:global name='keyword' function='RemoveXSS(@me)'/}</strong> 的结果
+</div>
+<div class="s_post_list">
+  {dede:list perpage='20'}
+<div class="s_post">
+  <span class="p_title">
+  <a class="bluelink" href="[field:arcurl/]" class="bluelink" target="_blank" >[field:title/]</a>
+  </span>
+  <div class="p_content">[field:description/]...</div>
+分类： <a href="[field:typeurl/]" target="_blank"><font class="p_violet">[field:typename/]</font></a>
+点击： <font class="p_violet">[field:click/]</font>　<font class="p_green">[field:stime/]</font>
+</div>
+{/dede:list}
+</div>
+</div>
+<div class="history_con clearfix"><div id="history_con"></div></div>
+</div>
+<div class="pager pager-search">
+			<ul class="pagelist">
+            	{dede:pagelist listsize='4'/}  
+			</ul></div>
+<div class="p_rec p_hot" id="j_hotba"></div>
+<div class="p_rsv"><a id="p_rsv" class="blueLink" data-pv="fr=tb0_forum&st_mod=forum&st_type=ps_rsv&st_value=ps_result" href="http://www.baidu.com/s?cl=3&wd={dede:global name='keyword' function='RemoveXSS(@me)'/}&rsv_tieba=1">去网页搜索：<em>{dede:global name='keyword' function='RemoveXSS(@me)'/}</em></a>（更大范围，更多样结果）</div>
+<div class="search_record"></div>
+<div style="clear:both;height:1px;line-height:1px;"></div>
+
+<div id="footer">                                                                                                         
+	<span>&copy;2013 Baidu</span>
+	<a href="#" target="_blank">贴吧协议</a>
+	<span>|</span>
+	<a href="#" target="_blank">吧主协议</a>
+	<span>|</span>
+	<a href="#" target="_blank">意见反馈</a>
+	<span>|</span>
+	<a href="#" target="_blank">收费删贴警示</a>
+</div>
+
+</div>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,1688 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>织梦吧_百度贴吧</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba2.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba3.css" />
+<link rel="stylesheet" href="/templets/default/style/skin.css" />
+</head>
+
+<body>
+<div id="com_userbar" style="z-index: 10005;">
+<ul>
+<li class="u_login">
+<a onclick="return false;" href="#">登录</a>
+</li>
+<li class="u_reg">
+<a onclick="return false;" href="#">注册</a>
+</li>
+</ul>
+</div>
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+
+	<div class="wrap_clear"></div>
+<div id="head" class="search search_theme_2 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+    <form name="f1" id="tb_header_search_form" class="f"  action="/f">
+              				<input autocomplete="off" size="42" tabindex="1" id="wd1" name="kw" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="进入贴吧" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"><a class="j_benba_search" href="#" onclick="return false;">吧内搜索</a></span>
+                  </form>
+  </div>
+
+</div>
+
+<div id="container">
+		<div class="above_nav" style="display:none">	</div>
+<div id="frs_nav" class="frs_nav_3" dr="B">
+	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/f?tp=0&kw=%D6%AF%C3%CE" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabmain" >织梦吧</a> </li><li class="divide" ></li><li class="icon_tab_focus" > <a class="icon_tab_discuss" href="/f?kw=%D6%AF%C3%CE&tp=0" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabdiscuss" id="icon_tab_discuss" >看贴</a> </li><li class="divide" ></li><li class="icon_tab " > <a class="icon_tab_picture" href="/f?kw=%D6%AF%C3%CE&tp=1" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabfrsphoto" id="icon_tab_photo" >看图</a> </li><li class="sub_divide" ></li><li class="small_tab" > <a href="/f/good?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabgood" >精品</a> </li><li class="divide" ></li><li class="small_tab" > <a href="/shipin/bw/forum/info?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabvideo" >视频</a> </li><li class="divide" ></li><li class="small_tab last" > <a href="/f/vote?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabvote" >投票</a> </li> </ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon refresh" id="refresh" href="&tp=0&pn=0" ></a> </li><li class='divide_line'></li><li class=" last" > <a class="nav_icon toggle" href="#" id="frs_old_version" ></a> </li> </ul><ul class="nav_center"> <li class=" first" > <a href="#" class="icon_add_post diff_tab" title="发表新贴" alt="发表新贴" id="add_post_btn" >发表新贴</a> </li> </ul> </div> </div>
+
+            <div class="dir_rank">
+            <div class="sign_rank_index_link"><a onclick="Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_bar_entr');" href="/sign/index?kw=%D6%AF%C3%CE&type=1" target="_blank">计算机软件签到排名</a></div>
+            <div>：本吧昨日排名靠后，不到十人签到，帮忙签到吧~~</div>
+            <div class="rank_sep"></div>
+            <div class="week_rank">周排名：<span class="rank_number">260</span></div>
+                        <div class="rank_sep"></div>
+            <div class="month_rank">月排名：<span class="rank_number">228</span></div>
+                                </div>
+    	<div class="frs_content clearfix" >
+	    <div class="contet_wrap" id="contet_wrap">
+            <div id="content_leftList" class="content_leftList clearfix">
+<!--    <script>
+        Interview = window.Interview || {};
+        FrsThreadItem = window.FrsThreadItem || {};
+        FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
+        FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
+        Interview.stopGetData = !!"0";
+        FrsThreadItem.LivePost.data.stopGetData = !!"0";
+    </script>-->
+
+<ul id="thread_list" class="threadlist">
+<li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="91个回复" class="threadlist_rep_num j_rp_num">91</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/wz.html" title="让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！" class="j_th_tit">让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%C9%AB%B7%E1%CD%CD%B3%F6" target="_blank">色丰屯出</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">下载地址 留下邮箱 我发给你！！<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-9</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> 
+<li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2121867986,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121867986" title="最新织梦dedecms5.7模板调用标签大全" target="_blank" class="j_th_tit">最新织梦dedecms5.7模板调用标签大全</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">织梦ＤＥＤＥ模板调用标签大全-提高制作模板速度<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-9</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2155646129,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2155646129" title="谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分？？…" target="_blank" class="j_th_tit">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分？？..</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=Xuela_M" target="_blank">Xuela_M</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分 麻烦贡献一下 只为学习 630139444@qq.com<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=Xuela_M" target="_blank">Xuela_M</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-9</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:1257403413,&quot;reply_num&quot;:71,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="71个回复" class="threadlist_rep_num j_rp_num">71</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/1257403413" title="《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]" target="_blank" class="j_th_tit">《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=1988%CF%E9%D7%D3" target="_blank">1988祥子</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">A5dedecms织梦建站培训-第1课.zip 51.2MB A5dedecms织梦建站培训-第2课.rar 56.7MB A5dedecms织梦建站培训-第3课.rar 49.1MB A5dedecms织梦建站培训-...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=WMS___" target="_blank">WMS___</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-7</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2152139372,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2152139372" title="有偿求助--dedecms搜索问题" target="_blank" class="j_th_tit">有偿求助--dedecms搜索问题</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=80083333" target="_blank">80083333</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">在发布文章的时候有一个摘要。 我想在站内收缩到文章摘要的时候搜索到相关文章 能做的来谈价格。 QQ：80083333<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=80083333" target="_blank">80083333</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-7</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2137100822,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2137100822" title="织梦导航栏" target="_blank" class="j_th_tit">织梦导航栏</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%BA%DA%CD%C1%B4%AB%C3%BD" target="_blank">黑土传媒</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">如何改成这样的 这是我网站的导航<!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2137100822"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/1826e71fbe096b6367e6e5690d338744eaf8ace8.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=e932793faec379317d688621dbffb645/a8014c086e061d959bb98c017af40ad162d9ca08.jpg" class="threadlist_pic j_m_pic " immediate onload="loadPic(this)" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/cb99c22a6059252d48dba63d359b033b5ab5b99f.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=82e6048bb8014a90813e46b5994c3812/10dfa9ec8a136327fe21790a908fa0ec08fac73f.jpg" class="threadlist_pic j_m_pic " immediate onload="loadPic(this)" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=80083333" target="_blank">80083333</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-7</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2150833693,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2150833693" title="吾爱织梦论坛 免费织梦仿站。有米有" target="_blank" class="j_th_tit">吾爱织梦论坛 免费织梦仿站。有米有</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%CE%E1%B0%AE%D4%B4%C2%EB" target="_blank">吾爱源码</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">吾爱织梦论坛 bbs.52codes.net<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%CE%E1%B0%AE%D4%B4%C2%EB" target="_blank">吾爱源码</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-6</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2137635140,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2137635140" title="关于域名的问题" target="_blank" class="j_th_tit">关于域名的问题</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">网站有二级域名现在新改版的网站我把二级域名指向了新改版的网站，我想等网站有收录了成熟了以后再把域名改过来这样做可以吗？<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-6</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:1854653251,&quot;reply_num&quot;:204,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="204个回复" class="threadlist_rep_num j_rp_num">204</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/1854653251" title="织梦中级建站教程 要的留下邮箱" target="_blank" class="j_th_tit">织梦中级建站教程 要的留下邮箱</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=q176369352" target="_blank">q176369352</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">如题<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%C9%F1%B7%E7%B4%F3%B5%C1360" target="_blank">神风大盗360</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-5</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:925795748,&quot;reply_num&quot;:212,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="212个回复" class="threadlist_rep_num j_rp_num">212</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/925795748" title="免费赠送 织梦建站教程全集(dede入门/dede中级/dede仿站)+织梦SEO教" target="_blank" class="j_th_tit">免费赠送 织梦建站教程全集(dede入门/dede中级/dede仿站)+织梦SE..</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=280t" target="_blank">280t</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">免费赠送 织梦建站教程全集(dede入门/dede中级/dede仿站)+织梦SEO教程&nbsp;&nbsp; 有意者与HI 我 <!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=WMS___" target="_blank">WMS___</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-5</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2135234238,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2135234238" title="求助织梦高手：织梦仿站channel里currentstyle的用法？" target="_blank" class="j_th_tit">求助织梦高手：织梦仿站channel里currentstyle的用法？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=wow%B0%C9%CB%AE%D4%AA%CB%D8" target="_blank">wow吧水元素</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">目标站源码为： &lt;li&gt;&lt;a href="url1" class="new1"&gt;新闻&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="url2" class="new2"&gt;热点&lt;/a&...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=wow%B0%C9%CB%AE%D4%AA%CB%D8" target="_blank">wow吧水元素</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-2</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2133249204,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2133249204" title="织梦科技2013年春节放假通知" target="_blank" class="j_th_tit">织梦科技2013年春节放假通知</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">亲爱的用户： 值此新春佳节来临之际，织梦科技全体员工给大家拜年啦！祝您在新的一年里身体健康，财源滚滚，合家欢乐，万事如意！同时感谢一路有您的...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人">----</span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2121863000,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121863000" title="织梦（dedecms）v5.7网站系统安全维护全攻略" target="_blank" class="j_th_tit">织梦（dedecms）v5.7网站系统安全维护全攻略</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">近期大量dede客户因为程序漏洞导致被黑客挂马和入侵,鉴于织梦（dedecms）网站系统长期爆出各类漏洞，希望广大网站客户给予足够的重视，如果可以使用其...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D0%C4%C6%F0%B5%E3%D0%C4%C3%CE%CF%EB" target="_blank">心起点心梦想</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2121887173,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121887173" title="关于Asp,PHP,JSP安全性,牛逼性,关于编程语言" target="_blank" class="j_th_tit">关于Asp,PHP,JSP安全性,牛逼性,关于编程语言</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">大部分网站开发人员可能都有这样的感觉，jsp最安全但不好学，php也比较安全也很好学，aspx也不错学起来也挺简单，asp他妈最不安全，学起来最简单。但...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D0%C4%C6%F0%B5%E3%D0%C4%C3%CE%CF%EB" target="_blank">心起点心梦想</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2121876212,&quot;reply_num&quot;:3,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:1,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="3个回复" class="threadlist_rep_num j_rp_num">3</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121876212" title="DedeCms，phpcms与帝国cms分析比较" target="_blank" class="j_th_tit">DedeCms，phpcms与帝国cms分析比较</a>
+			</span>
+			<img src="http://tb1.bdstatic.com/tb/static-frs/img/icon/jing.gif" />
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">一、DedeCms 在以往，当只有DedeCms开源，其它都不开源的时候，一些恶意评论都在攻击说Dede说假开源，不过当大家都开源后，这种思想就不再存在了，我...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D0%C4%C6%F0%B5%E3%D0%C4%C3%CE%CF%EB" target="_blank">心起点心梦想</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2126307861,&quot;reply_num&quot;:3,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="3个回复" class="threadlist_rep_num j_rp_num">3</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2126307861" title="发布文档编辑器不显示" target="_blank" class="j_th_tit">发布文档编辑器不显示</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=17maoyiba" target="_blank">17maoyiba</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">发布文档编辑器不显示 ，<!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/e992a7119313b07e9f808f3c0dd7912397dd8ca1.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=727f742b06082838680ddc1c88a2a901/91529822720e0cf382ca91cf0b46f21fbe09aac1.jpg" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=Sp%D5%C5%D1%A9%B1%CC" target="_blank">Sp张雪碧</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2132479383,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2132479383" title="急：织梦后台发文章,文章内的图片在前台不显示" target="_blank" class="j_th_tit">急：织梦后台发文章,文章内的图片在前台不显示</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=earthyiyi111" target="_blank">earthyiyi111</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">我在织梦后台发布的文章带有图片,刚发布完成的时候在前台显示，以后再打开文章内的图片在前台就显示不出来了 。 <!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2132479383"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/07ae23d3d539b60085fe4f80e850352ac65cb7b1.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=4714f31f377adab43dd01b4bbbefb31c/279759ee3d6d55fb0df636116c224f4a20a4ddd1.jpg" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=earthyiyi111" target="_blank">earthyiyi111</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">2-1</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2102042200,&quot;reply_num&quot;:12,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="12个回复" class="threadlist_rep_num j_rp_num">12</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2102042200" title="这个网站真是愁煞人了" target="_blank" class="j_th_tit">这个网站真是愁煞人了</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">织梦网站捣鼓了半天网站样式就是出不来，真是愁煞人了。 <!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2102042200"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/24b13a2eb9389b5040569a9b8535e5dde6116e29.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=32f91a02b2fb43161a1f7a72109f4423/b7003af33a87e9503abe89a510385343faf2b449.jpg" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%BB%D5%C9%CC%C4%BE%D3%E3" target="_blank">徽商木鱼</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-29</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2125197303,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2125197303" title="哪里有一个好的织梦交流平台呢？" target="_blank" class="j_th_tit">哪里有一个好的织梦交流平台呢？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">哪里有一个好的织梦交流平台呢？<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-29</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2118308711,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2118308711" title="这个怎么解决啊 高人们" target="_blank" class="j_th_tit">这个怎么解决啊 高人们</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%C5%AE%BF%AF%CA%DD%C3%C0%C8%CB%B5%EA" target="_blank">女刊瘦美人店</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline"><!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2118308711"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/89305ac2d5628535931e0d1091ef76c6a6ef63e1.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=35d587234e4a20a4311e3ccfa0699922/e850352ac65c1038258011f3b3119313b07e8901.jpg" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%C5%AE%BF%AF%CA%DD%C3%C0%C8%CB%B5%EA" target="_blank">女刊瘦美人店</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-27</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2121865196,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121865196" title="dedecms织梦文章页分页样式的修改" target="_blank" class="j_th_tit">dedecms织梦文章页分页样式的修改</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">如何提升网站PV值呢？最好的办法就是让你网站的内容更有吸引力，吸引人们点击，同时如果一篇文章过长的话，可以适度的增加文章分页，这样的话，网站PV...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2121864261,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121864261" title="dedecms列表页分页样式去掉li的方法" target="_blank" class="j_th_tit">dedecms列表页分页样式去掉li的方法</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">列表页面的分页修改文件是include文件夹中arc.listview.class.php，利用DW打开该文件，通过CTRL+F查找"共"就能立即找到需要修改的地方，注意查看代...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2121861393,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121861393" title="DEDECMS限制标题长度后鼠标移到标题显示完整的titlex" target="_blank" class="j_th_tit">DEDECMS限制标题长度后鼠标移到标题显示完整的titlex</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">DEDECMS有时候标题限制字符很短的话，鼠标移动到标题上显示不完整的标题锚文本，这种情况我们换下锚文本的调用标签即可，下面看具体的操纵：我们正常...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2121859904,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121859904" title="SQL批量删除织梦dedecms文章内容为空和字数少于15的文章" target="_blank" class="j_th_tit">SQL批量删除织梦dedecms文章内容为空和字数少于15的文章</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">手动SQL删除织梦dedecms文章内容为空和字数少于15的文章，其实织梦dedecms后台带有这些功能，在后台"批量维护" 中，但是用系统中的这个功能会出现有...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target="_blank">织梦云计算</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2121051908,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2121051908" title="同样的网站头部" target="_blank" class="j_th_tit">同样的网站头部</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">同样的网站头部，为什么网址却是不同的呢<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2117408920,&quot;reply_num&quot;:4,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="4个回复" class="threadlist_rep_num j_rp_num">4</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2117408920" title="关于网站服务器安装的问题" target="_blank" class="j_th_tit">关于网站服务器安装的问题</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">在服务器上安装网站时数据库怎么设定 ，网站改版不删掉原有网站的基础上是不是就有两个数据库有重复数据？如果数据库名字相同的话他又会不会覆盖之前...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2115590355,&quot;reply_num&quot;:6,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="6个回复" class="threadlist_rep_num j_rp_num">6</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2115590355" title="请问商品的缩略图出不来怎么弄呀" target="_blank" class="j_th_tit">请问商品的缩略图出不来怎么弄呀</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=17maoyiba" target="_blank">17maoyiba</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">做了一个商品页面但是就是缩略图出不来怎么弄呀<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=17maoyiba" target="_blank">17maoyiba</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2120996570,&quot;reply_num&quot;:1,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="1个回复" class="threadlist_rep_num j_rp_num">1</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2120996570" title="网站传到服务器上出现的又一个问题" target="_blank" class="j_th_tit">网站传到服务器上出现的又一个问题</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">网站传到服务器上出现的另一个问题就是会员这个不能用了是不是还是路径的问题呢？<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-26</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2113894936,&quot;reply_num&quot;:4,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="4个回复" class="threadlist_rep_num j_rp_num">4</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2113894936" title="我的网站不能安装了" target="_blank" class="j_th_tit">我的网站不能安装了</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">换了一台电脑，现在网站不能安装了呢 <!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2113894936"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/32c4532309f79052ff3cc2f30cf3d7ca7acbd5b8.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=b60dc30d82025aafd3327ec3cbd6aa64/a08b87d6277f9e2f601698c51f30e924b999f3d8.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2119759161,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2119759161" title="紧急 无法更新栏目  没反应" target="_blank" class="j_th_tit">紧急 无法更新栏目  没反应</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%C4%C7%D0%A9%CA%B1%BC%E4%B5%C4%CD%F9%CA%C2" target="_blank">那些时间的往事</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">新栏目 没有反应 //更新主页 /*------------------------- function _3_MakeHomePage() -------------------*/ if($step==3) { include_once(DEDEINC....<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%C4%C7%D0%A9%CA%B1%BC%E4%B5%C4%CD%F9%CA%C2" target="_blank">那些时间的往事</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2119566014,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2119566014" title="织梦缩略图的问题" target="_blank" class="j_th_tit">织梦缩略图的问题</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=jayfast01" target="_blank">jayfast01</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">另存为缩略图的大小是原图的大小，如何让图片设置多大另存为的图就多大？<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=jayfast01" target="_blank">jayfast01</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2117905231,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2117905231" title="为啥删除我在这个贴吧为别人解决问题的帖子！" target="_blank" class="j_th_tit">为啥删除我在这个贴吧为别人解决问题的帖子！</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=litian890502" target="_blank">litian890502</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">我建立一个帖子在本吧为别人解决问题，为啥将我帖子删除，总要有个说法吧！！为别人解决问题的帖子都删除，哪还要这个吧做什么？<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%BA%AE%CB%AE%CE%DE%C7%E9smile" target="_blank">寒水无情smile</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:1896503415,&quot;reply_num&quot;:50,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="50个回复" class="threadlist_rep_num j_rp_num">50</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/1896503415" title="本人只是玩织梦玩了几年，算不上高手，但是至少得心应手" target="_blank" class="j_th_tit">本人只是玩织梦玩了几年，算不上高手，但是至少得心应手</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%D0%A1%C6%A2%C6%F8only%D1%F3" target="_blank">小脾气only洋</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline"> 一楼织梦的logo镇楼 <!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm1896503415"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/bab3e81f4134970a3d52a7a695cad1c8a6865df1.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=9e0f32c7ca8065387beaa41ba7e6a044/a6efce1b9d16fdfaa24d7167b48f8c5494ee7b11.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%D0%A1%C6%A2%C6%F8only%D1%F3" target="_blank">小脾气only洋</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2118092213,&quot;reply_num&quot;:3,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="3个回复" class="threadlist_rep_num j_rp_num">3</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2118092213" title="【急】织梦模板安装问题，，小弟新手，哪位好心人帮帮忙，" target="_blank" class="j_th_tit">【急】织梦模板安装问题，，小弟新手，哪位好心人帮帮忙，</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=qqq562754144" target="_blank">qqq562754144</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">我下载了一个网站的源码。可是源码版面不太好，我就去找了一个模板.....我把文件覆盖i更新了，可是，栏目应该怎么装。我用记事本打开他的指向自己的网...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=yang303711888" target="_blank">yang303711888</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-25</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2094267209,&quot;reply_num&quot;:12,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="12个回复" class="threadlist_rep_num j_rp_num">12</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2094267209" title="织梦科技是做idc还是做网站的？要逆天了！" target="_blank" class="j_th_tit">织梦科技是做idc还是做网站的？要逆天了！</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%CE%C5%B7%E7%C0%B4" target="_blank">闻风来</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">上个月，在网上闲逛看到一个广告"1G独立IP空间，送1G数据库"，正好我的空间马上就要到期了，于是点击进去看，发现是织梦科技在卖虚拟主机域名，顿时...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%CE%C5%B7%E7%C0%B4" target="_blank">闻风来</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-24</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2117626901,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2117626901" title="求助下，安装后首页不能正常显示是什么原因" target="_blank" class="j_th_tit">求助下，安装后首页不能正常显示是什么原因</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=sa322" target="_blank">sa322</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">生成过静态了,但首页还是这样 <!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2117626901"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/082c440fd9f9d72ae9e3ba2cd52a2834359bbbd8.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=0b9c50fd1f178a82ce3c7fa8c638728d/f3d3572c11dfa9ec03a9fc2663d0f703918fc178.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%E8%F3%BD%AB%BE%FC" target="_blank">梵将军</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-24</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2118122518,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2118122518" title="织梦带略缩图特效代码" target="_blank" class="j_th_tit">织梦带略缩图特效代码</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=yang303711888" target="_blank">yang303711888</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline"> 使用说明:后台创建一个栏目 设置为隐藏 把下面代码放入你的模板里 把typeid=ID号改为隐藏的栏目ID号 在后台添加文档上传略缩图即可 看下效果吧 属性...<!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2118122518"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/7569dc3d70cf3bc75be02dddd000baa1cc112afb.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=147fd9f530adcbef01347e0e9c942fdd/2cf5e0fe9925bc3198bde1a95fdf8db1cb13701b.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=yang303711888" target="_blank">yang303711888</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-24</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2110285424,&quot;reply_num&quot;:3,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="3个回复" class="threadlist_rep_num j_rp_num">3</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2110285424" title="我相信没有人能看出是怎么回事" target="_blank" class="j_th_tit">我相信没有人能看出是怎么回事</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline"> 源码中有综合的子栏目，但是导航中却不出，综合后边的空完全购子栏目的宽度这是怎么回事呢，你能看的出来吗？<!----></div>
+			
+			<ul class="threadlist_media j_threadlist_media" id="fm2110285424"><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/69ab1f46f21fbe09a0c1a2d86b600c338644ad3b.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=c8ed2c0cf736afc30e0c3f6d8322e9c4/b999a9014c086e06d6375e8702087bf40bd1cb5b.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li><li><div class="vpic_wrap"><img src="http://static.tieba.baidu.com/tb/static-frs/img/blank.gif?v=1" original="http://imgsrc.baidu.com/forum/abpic/item/8f76e8faaf51f3dea35bd8a894eef01f382979f4.jpg"  bpic="http://imgsrc.baidu.com/forum/w%3D580%3B/sign=c01e2f370a46f21fc9345e5bc61f6960/64380cd7912397ddb690f9c85982b2b7d1a28714.jpg" class="threadlist_pic j_m_pic "  /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-24</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2117977791,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2117977791" title="织梦如何同时调用连个id 啊？" target="_blank" class="j_th_tit">织梦如何同时调用连个id 啊？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=654454806" target="_blank">654454806</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">div&gt;产品分类&lt;/div&gt; &lt;/div&gt; &lt;div id="left1_cot" class="iproduct_list"&gt; &lt;ul&gt; {dede:channel typeid='3' row='20' curre...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=654454806" target="_blank">654454806</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-24</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2116903452,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2116903452" title="添加顶级栏目，并且添加文章后，显示Index of /dede/a/wuxiawe…" target="_blank" class="j_th_tit">添加顶级栏目，并且添加文章后，显示Index of /dede/a/wuxiawe…</a>
+			</span>
+			
+		</div>
+
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%B7%DE%C5%AD%B5%C4%CB%C0%D3%E3" target="_blank">忿怒的死鱼</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">添加一个名为"武侠文章"的顶级栏目，页面应该直接跳进index.html才对。 但页面显示为： Index of /dede/a/wuxiawenzhang
+ Parent Directory 2013/ i...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%B7%DE%C5%AD%B5%C4%CB%C0%D3%E3" target="_blank">忿怒的死鱼</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-23</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2116283884,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2116283884" title="如何让织梦首页调用问答的栏目呢？" target="_blank" class="j_th_tit">如何让织梦首页调用问答的栏目呢？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=%B0%AE%B7%E84%B5%C4%D3%D5%BB%F3" target="_blank">爱疯4的诱惑</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">网上一大把只找到调用栏目文章的。而且好像还是只能调用在问答的首页、、我要的是主页里调用。跪求、、、、<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%B0%AE%B7%E84%B5%C4%D3%D5%BB%F3" target="_blank">爱疯4的诱惑</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-23</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2081373123,&quot;reply_num&quot;:3,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="3个回复" class="threadlist_rep_num j_rp_num">3</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2081373123" title="织梦5.7 如后在后台文章里上传视频？" target="_blank" class="j_th_tit">织梦5.7 如后在后台文章里上传视频？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=keaizxh" target="_blank">keaizxh</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">那位高手指点下，我不会在后台里上传视频 麻烦写的详细点哈 谢谢了<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=ryan364974671" target="_blank">ryan364974671</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-23</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2110462295,&quot;reply_num&quot;:5,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="5个回复" class="threadlist_rep_num j_rp_num">5</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2110462295" title="看出什么问题来了吗？" target="_blank" class="j_th_tit">看出什么问题来了吗？</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=fajianv" target="_blank">fajianv</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline"> <!----></div>
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=%E8%F3%BD%AB%BE%FC" target="_blank">梵将军</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-22</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2114269897,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2114269897" title="缩略图宽跟高设置好，当图片过大，如何自动裁取图片一部分做缩…" target="_blank" class="j_th_tit">缩略图宽跟高设置好，当图片过大，如何自动裁取图片一部分做缩…</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=jayfast01" target="_blank">jayfast01</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">如topit.me 缩略图都是裁剪过 如何自动裁取图片一部分做缩略图。谢谢了<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=jayfast01" target="_blank">jayfast01</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-22</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2111244600,&quot;reply_num&quot;:0,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="0个回复" class="threadlist_rep_num j_rp_num">0</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2111244600" title="新手！列表模版中，每一个标题前，都有一个栏目，点击能查看全…" target="_blank" class="j_th_tit">新手！列表模版中，每一个标题前，都有一个栏目，点击能查看全…</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=ASPDONETphone" target="_blank">ASPDONETphone</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">新手！列表模版中，每一个标题前，都有一个栏目，点击能查看该栏目下的全部内容，如何实现呢。<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=ASPDONETphone" target="_blank">ASPDONETphone</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-20</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list threadlist_li_gray" class="j_thread_list" data-field="{&quot;id&quot;:2104716174,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2104716174" title="织梦模板中导航栏怎么样调用" target="_blank" class="j_th_tit">织梦模板中导航栏怎么样调用</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=66%B5%E7%C4%D4%D6%AA%CA%B6%CD%F8" target="_blank">66电脑知识网</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">&lt;ul&gt; &lt;li&gt;&lt;a href="#"&gt;中国人民共和国&lt;/a&gt;&lt;/li&gt; &lt;li class="noborder"&gt;&lt;/li&gt; &lt;li&gt;&lt;a href="#"&g...<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=66%B5%E7%C4%D4%D6%AA%CA%B6%CD%F8" target="_blank">66电脑知识网</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-20</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> <li class="j_thread_list" class="j_thread_list" data-field="{&quot;id&quot;:2108686061,&quot;reply_num&quot;:2,&quot;is_bakan&quot;:0,&quot;vid&quot;:&quot;&quot;,&quot;is_good&quot;:0,&quot;is_top&quot;:0,&quot;is_protal&quot;:0}"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="2个回复" class="threadlist_rep_num j_rp_num">2</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/p/2108686061" title="召一个织梦2次开发的人" target="_blank" class="j_th_tit">召一个织梦2次开发的人</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author "><a href="/i/sys/jump?un=MHLXSWZX" target="_blank">MHLXSWZX</a></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">有木有？大学生创业，不容易，加我86955960<!----></div>
+			
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=MHLXSWZX" target="_blank">MHLXSWZX</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="最后回复时间">1-20</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li> </ul>
+<script>if(typeof PDC != 'undefined'){PDC.mark('thread_list_end');}</script><div id="frs_list_pager" class="pager clearfix"><span class="cur">1</span>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=50">2</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=100">3</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=150">4</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=200">5</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=250">6</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=300">7</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=350">8</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=400">9</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=450">10</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=50" class="next">下一页&gt;</a>
+<a href="/f?kw=%D6%AF%C3%CE&tp=0&pn=450" class="last">尾页</a>
+</div></div>        </div>
+		<div id="aside" class="aside">
+			<div class="region_2 sign_mod2" id="sign_mod">
+    <div class="sign_tip_container">
+        <div class="j_succ_info sign_succ2" style="display:none">
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
+	<div class="region_header">
+		<div class="region_op j_op"> </div>
+		<div class="region_title region_icon j_title">本吧信息</div>
+	</div>
+	<div class="region_cnt">
+		
+
+	<h4><a href="#" class="manager_btn" onclick="return false;">吧主</a>：</h4>
+	<ul>
+			<li>
+  		<a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target=_blank>织梦云计算</a>
+  		  	</li>
+      <li style="display:none">
+      <span id="tbManagerApply">
+            </span>
+  	</li>
+		<li id="tbManagerCandidatesNum" style="display:none">
+				</li>
+	</ul>
+<h4>会员：</h4>
+<ul>
+	<li>
+	<a id="member_name_link" href="/f/like/manage/list?kw=%D6%AF%C3%CE" target="_blank">织梦者</a>
+	<span class="member_num_o">共<span class="member_num">508</span>人</span>
+	</li>
+	<li id="hall_in" class="hall_in" style="display:none;"><a href="/fame-hall/index_%D6%AF%C3%CE" target="_blank">名人堂&gt;&gt;</a></li>
+</ul>
+<h4 class="forum_dir_info">目录：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+					<a href="/f/fdir?fd=%BF%C6%D1%A7%BC%BC%CA%F5&sd=%BC%C6%CB%E3%BB%FA%C8%ED%BC%FE"  stats-data="area=frs_dir"  target="_blank">计算机软件</a>
+			</li>
+</ul>
+
+
+ 
+	</div>
+	<div class="region_footer"></div>
+</div>
+
+<div id="zyq" class="zyq_2" ><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
+<div class="tl">
+	<div class="mod_edit_wrap"></div>
+	<div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">自定义链接</span></div>
+</div>
+<div class="cnt">
+<ul class="zyq_mod_link_items">
+
+<li><a href="http://www.zhimengkeji.com" target="_blank" class="j_mod_item">织梦</a></li>
+
+<li><a href="http://www.zhimengkeji.com/domain.asp" target="_blank" class="j_mod_item">COM/NET/ORG/域名注册35一年</a></li>
+
+<li><a href="http://www.zhimengkeji.com/hosting.asp?sub=vhost1" target="_blank" class="j_mod_item">香港空间</a></li>
+
+<li><a href="http://www.zhimengkeji.com/hosting.asp?sub=vhost4" target="_blank" class="j_mod_item">美国独立IP空间</a></li>
+
+<li><a href="http://www.zhimengkeji.com" target="_blank" class="j_mod_item">织梦科技</a></li>
+
+</ul>
+</div>
+</div><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
+	<div class="tl"><div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情贴吧</span></div>
+	<div class="cnt">
+	
+	<ul class="zyq_mod_friend_items">
+	  
+	  <li><a href="/f?kw=%D6%AF%C3%CE%BF%C6%BC%BC&frs=yqtb" target="_blank" class="j_mod_item">织梦科技</a></li>
+	  
+	  <li><a href="/f?kw=phpwind&frs=yqtb" target="_blank" class="j_mod_item">phpwind</a></li>
+	  
+	  <li><a href="/f?kw=%D5%BE%B3%A4%C1%AA%C3%CB&frs=yqtb" target="_blank" class="j_mod_item">站长联盟</a></li>
+	  
+	</ul>
+	
+	</div>
+</div></div>
+
+	
+		
+
+		</div>
+	</div>	
+</div>	<div class="th_footer_2">
+		        <div class="th_footer_l">
+    				共有主题数<span class="red">480</span>个，贴子数<span class="red">2183</span>篇，
+            <a class="fans_name" href="                /f/like/manage/list?kw=%D6%AF%C3%CE            " target="_blank">织梦者</a>数<span class="red">508</span>
+						</div>
+		 		 		 <a href="/tousu/new/add?frstitle=%D6%AF%C3%CE" target="_blank" class="btn_tousu fr" data-checkun="un">贴吧投诉</a>
+		 		 </div>
+
+<div id="editor" class="frs_rich_editor" data-editor="{forbid_flag:'0',has_grade:'1',u_forum_name:'%D6%AF%C3%CE',can_post:'1',is_notitle:false,is_login:'1'}" data-postor="{kw:'织梦',ie:'utf-8',rich_text:'1',floor_num:'0',fid:'1400850',tid:'0'}">
+<a name="sub"></a>
+<form id="pt1360681535829" autocomplete="off" method="post">
+<div id="edit_parent">
+<div class="new_tiezi_tip">
+<div class="editor_title_txt">发表新贴</div>
+</div>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr id="tt1360681535829" style="">
+<td width="49" valign="top" nowrap="" style="line-height:32px;">标　题:</td>
+<td>
+<a name="ju"></a>
+<div id="td1360681535829">
+<input id="title1" class="edit_title_field" type="text" value="" name="title">
+</div>
+<div id="tE1360681535829" class="postErrorTitle"></div>
+</td>
+</tr>
+<tr>
+<td width="49" valign="top" nowrap="">内　容:</td>
+<td>
+<div style="position:relative;z-index:1000">
+<div id="ebt1360681535829" class="editor_tip_show" style="display: none;"></div>
+</div>
+<div id="eInput1360681535829" style="position:relative;">
+<div class="tb-editor-wrapper" style="width: 633px;">
+<div class="tb-editor-overlay" style="display: none;">
+<span class="close"></span>
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+<div class="tb-editor-overlay" style="display: none;">
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+<div class="tb-editor-toolbar">
+<span class="image" data-cmd="image"></span>
+<label></label>
+<span class="flash" data-cmd="flash"></span>
+<label></label>
+<span class="music" data-cmd="music"></span>
+<label></label>
+<span class="smiley" data-cmd="smiley"></span>
+<label></label>
+<span class="picasso" data-cmd="picasso"></span>
+<label></label>
+<span class="cut_screen" data-cmd="unabled_cut"></span>
+<label></label>
+<span class="idisk" data-cmd="idisk"></span>
+</div>
+<div class="tb-editor-editarea-wrapper">
+<div class="tb-editor-editarea" contenteditable="true" style="height: 193px; min-height: 193px; display: block; position: relative;">
+<br>
+</div>
+<div class="box-holder" style="display: none;">
+<span class="box-title">
+想用@提到谁？
+<span></span>
+</span>
+<ul class="box-ul-empty"></ul>
+</div>
+</div>
+<div class="storageTip" style="display: none;">你上次未发表的内容已自动恢复</div>
+<div class="tb-editor-overlay idisk_holder" style="left: -1000px;">
+<div class="idisk_btn_container">
+<button id="idisk_btn" style="display: none;">上传文件</button>
+<span>正在连接百度云，请稍候...</span>
+</div>
+还能上传
+<em id="attachmentNumberCount">5</em>
+个附件，每个附件小于
+<em>200.00MB</em>
+<br>
+附件将同步到百度云网盘，您的剩余空间：
+<em id="idisk_unused"></em>
+<a target="_blank" href="http://pan.baidu.com/">整理网盘</a>
+<div class="close"></div>
+<div class="arrow"></div>
+</div>
+</div>
+</div>
+<textarea id="textInput" style="display:none"></textarea>
+<div id="co1360681535829" class="postErrorContent"></div>
+</td>
+</tr>
+<tr id="pu1360681535829" style="">
+<td class="pt_uname" valign="top"></td>
+<td>
+<div class="editor_users">
+<label style="display: none;">
+<input id="pl1360681535829" type="radio" checked="checked" name="post_author_type">
+884358
+</label>
+<span id="pac1360681535829" style="display:none;">
+<label style="display: none;">
+<input id="pa1360681535829" type="radio" name="post_author_type">
+匿名发表
+</label>
+</span>
+<span id="mca1360681535829" style="color:#666"></span>
+</div>
+<div id="sp1360681535829" style="display:none"></div>
+</td>
+</tr>
+<tr id="cc1360681535829" style="display:none;">
+<td class="pt_valid" valign="top" nowrap="nowrap">
+<label style="line-height:24px;" for="captcha">验证码:</label>
+</td>
+<td valign="middle" nowrap="nowrap" align="left">
+<div id="cd1360681535829" class="pt_valid_code">
+<div class="clearfix">
+<div class="c_captcha_input_con j_input_con">
+<input class="c_captcha_input_normal j_captcha_input" maxlength="10" size="10" autocomplete="off" style="ime-mode:disabled ">
+</div>
+<div class="c_captcha_sub_wrap j_captcha_content clearfix" style="display:none;">
+<div class="c_captcha_img j_captcha_img_wrapper"></div>
+<div class="c_captcha_a">
+<a class="j_captcha_img_change">看不清?</a>
+<a class="c_captcha_a_audio j_captcha_audio_switch">收听验证码</a>
+</div>
+<div class="c_captcha_audio">
+<img class="j_captcha_audio_icon c_captcha_audio_img" src="http://tieba.baidu.com/tb/img/audio.gif">
+<span class="j_captcha_audio_wrapper"></span>
+</div>
+</div>
+</div>
+<div class="c_captcha_tip j_captcha_tip">请点击后输入验证码</div>
+<div class="c_captcha_error j_captcha_err"></div>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td class="pt_submit">
+<input id="aps1360681535829" class="subbtn_bg" type="submit" value=" 发 表 ">
+<span class="subTip">Ctrl+Enter快捷发表</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+
+
+<div id="footer">                                                                                                         
+	<span>&copy;2013 Baidu</span>
+	<a href="/tb/eula.html" target="_blank">贴吧协议</a>
+	<span>|</span>
+	<a href="http://tieba.baidu.com/tb/cms/manager_apply/bz_agreement.html" target="_blank">吧主协议</a>
+	<span>|</span>
+	<a href="/f?kw=贴吧意见反馈&ie=utf-8" target="_blank">意见反馈</a>
+	<span>|</span>
+	<a href="/tb/zt/declare/" target="_blank">收费删贴警示</a>
+</div>
+
+</div>
+</div>
+
+<script src="/templets/default/js/tieba.js"></script>
+<!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+
+<script src="/templets/default/js/tieba2.js"></script>
+<!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
+
+
+<script>
+	   _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version){
+			
+			var frsNavParams = {
+
+				forum : {
+					id : 1400850,
+					name :'织梦',
+					name_u :'%D6%AF%C3%CE',
+					forbid_flag : 0				},
+				page : "main",
+				type : "album",
+				tbs : ''
+			};  	  
+			_.Module.use('common/widget/Tbnav', ['frs_nav',frsNavParams,version], function(){
+					common.Tbnav.run();
+				});
+		});
+	
+
+    $(document).ready(function(){
+        $(".signrank_crown").click(function(){
+             Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
+             window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
+             return false;
+        });
+    });
+</script>
+
+
+
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+<script src="/templets/default/js/tieba3.js"></script>
+
+<script>
+if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
+  TbCom.defaultLogicInit(PageData.user, 'forum');
+}
+</script>
+<!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
+<script id="pageconf_tbskin_version" type="text/html">20130201</script>
+<script>
+	if(!PageData.is_ipad){
+		(function() {
+			var forumSkinId = 202;
+			//创建一个全局的userSkinManager，用于页面皮肤设置操作
+			var userSkinManager = window.userSkinManager = new UserSkinManager();
+			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
+		})();
+	}
+</script>
+
+<script>
+	if(!PageData.is_ipad){
+		window.Common_GoTop();
+	}
+</script>
+
+
+</body>
+
+</html>

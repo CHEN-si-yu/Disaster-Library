@@ -1,0 +1,582 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>发布文档编辑器不显示_织梦</title>
+<!--[if lt IE 9]>
+<script>
+(function(){
+    var tags = ['header','footer','figure','figcaption','details','summary','hgroup','nav','aside','article','section','mark','abbr','meter','output','progress','time','video','audio','canvas','dialog'];
+    for(var i=tags.length - 1;i>-1;i--){ document.createElement(tags[i]);}
+})();
+</script>
+<![endif]-->
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/article_tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/article_tieba2.css" />
+<link rel="stylesheet" href="/templets/default/style/skin.css" />
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+</head>
+<body>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+	
+	function CheckLogin2(){
+	  var taget_obj = document.getElementById('_fatie');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_fatie.php");
+	  DedeXHTTP = null;
+	}	
+-->
+</script>
+<div id="com_userbar" style="z-index: 10005;">
+<div id="_userlogin">
+<ul>
+<li class="u_login">
+<a href="/member/login.php">登录</a>
+</li>
+<li class="u_reg">
+<a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
+</li>
+</ul>
+</div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script>
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+
+	<div class="wrap_clear"></div>
+<div id="head" class="search search_theme_2 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+    <form name="f1" id="tb_header_search_form" class="f"  action="/f">
+              				<input autocomplete="off" size="42" tabindex="1" id="wd1" name="kw" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="进入贴吧" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"><a class="j_benba_search" href="#" onclick="return false;">吧内搜索</a></span>
+                  </form>
+  </div>
+
+</div>
+
+
+
+<!--广告1-->
+	<div class="l_banner banner_theme_2">		
+<table cellpadding="0" cellspacing="0" border="0"><tr><td><div style="position:relative;text-align:left; height:90px;width:984px;font-family:宋体"><a href="#" target="_blank"><img src="/templets/default/images/ad1.jpg" width="984" height="90" border="0" style="display:block;"></a></div></td></tr></table>
+	</div>
+<!--广告1-->
+
+<div id="container" class="l_container clearfix ">
+	<div id="frs_nav" class="frs_nav_3" dr="B">
+	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabmain" >织梦吧</a> </li><li class="divide" ></li></ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon pb_toggle" id="pb_new_version" href="#" ></a> </li> </ul> </div> </div>
+
+
+	<div class="left_section" >
+		<div class="core">
+			
+<div class="core_title core_title_theme2">
+	<h1 class="core_title_txt" title="发布文档编辑器不显示">发布文档编辑器不显示</h1>
+</div>
+	<div class="p_postlist" id="j_p_postlist">
+
+<div class="l_post noborder">
+	
+	<a name="18275421080"></a>
+	<div class="d_author">
+<ul class="p_author post_icon">
+			<li class="icon">
+			<div class="icon_relative" style="padding:4px;margin-top:2px;">			  				
+			<img class="icon" src="/member/templets/images/dfboy.png" style="width:80px;height:80px" />
+            </div>	
+			</li>
+			 <li class="d_name">admin</li>
+                         <li class="d_name"><a href='http://127.0.0.1/member/index.php?uid=admin' class="username">查看详细资料</a></li>
+                         <li class="d_name"><a href='http://127.0.0.1/member/index.php?uid=admin&action=guestbook' class="username">发送留言</a></li>
+                         <li><a href="http://127.0.0.1/member/index.php?uid=admin&action=newfriend" class="useract-af">加为好友</a></li>
+			 <li class="l_badge">
+			 	<div class="p_badge"></div>
+			 </li>
+		</ul>
+	</div>
+	
+	<div class="d_post_content_main ">	
+		<div class="p_content">
+		<div class="louzhubiaoshi_wrap">
+				<div class="louzhubiaoshi" author="admin"></div>
+				</div>
+									<cc><div id="post_content_18275421080" class="d_post_content"><span style="color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px; line-height: 24px;">发布文档编辑器不显示 ，</span><br />
+<img changedsize="true" class="BDE_Image" height="272" pic_type="0" src="/uploads/allimg/130214/1519422261-0.jpg" style="border: 0px; margin-top: 8px; color: rgb(0, 0, 0); font-family: 宋体; font-size: 14px; line-height: 24px; cursor: url(http://tb2.bdstatic.com/tb/static-pb/img/cur_zin.cur), pointer;" width="560" /></div></cc><br/>
+											  	</div>	
+	  						<div class="share_thread">
+				<div style="margin:0 0 0 240px">
+				<div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+				 <span id="bds_share_more" class="bds_more dis_share_num"><span class="repost_num"><a class="shareCount" style="margin-top:1px;"></a></span></span>
+				</div>
+				</div>
+			</div>
+							<div class="core_reply j_lzl_wrapper">
+				<a name="18275421080l"></a>
+						    	<div class="core_reply_tail">
+	              	              	<ul class="p_reply">
+                                    <li style="display:none;"><script src="/plus/count.php?view=yes&aid=5&mid=1" type='text/javascript' language="javascript"></script></li>
+	                	<li>2013-02-14 15:13:50</li>
+	            	</ul>
+	               
+	              <ul class="p_tail"></ul>
+	              <ul class="p_mtail"></ul>
+			    </div>
+	            <div class="j_lzl_container core_reply_wrapper" style="display:none">
+	              <div class="core_reply_border_top"></div>
+	              <div class="j_lzl_c_b_a core_reply_content">
+	                  <ul class="j_lzl_m_w" style="display:none">
+	                    	                    <li class="lzl_li_pager j_lzl_l_p lzl_li_pager_s" >
+	                    	<p class="j_lzl_p"><a href="##">我也说一句</a></p>
+	                        	                          <p>&nbsp;</p>
+	                          
+	                    </li>
+	                  </ul>
+	                  <div class="lzl_editor_container j_lzl_e_c lzl_editor_container_s" style="display:none;"></div>
+	                  <input type="text" class="j_lzl_e_f_h" style="display:none;" />
+	              </div>
+	              <div class="core_reply_border_bottom"></div>
+				</div>
+			</div>
+				 			        
+								</div>	<div class="clear"></div>
+	
+</div>
+<a name='commettop'></a>
+<div class="mt1">
+  <dl class="tbox">
+    <!-- //这两个ID的区块必须存在，否则JS会出错 -->
+    <dd id='commetcontent'></dd>
+    <dd id='commetcontentNew'></dd>
+  </dl>
+</div>
+	</div>
+		</div>
+	</div>
+			<div class="right_section">
+			<div class="region_2 sign_mod2" id="sign_mod">
+
+        		    	<div class="sign_title_text2"></div>
+
+
+    		
+    	<div class="sign_rights">
+			<div class="sign_rights_icon_line"></div>
+			<div class="sign_rights_display clearfix">
+			<div class="sign_rights_icon j_sign_rights_icon rights_1"></div>
+			<div class="sign_rights_icon j_sign_rights_icon rights_2"></div>
+			<div class="sign_rights_icon j_sign_rights_icon rights_3"></div>
+			<div class="sign_rights_icon j_sign_rights_icon rights_4"></div>
+			<div class="sign_rights_icon j_sign_rights_icon rights_5"></div>
+		</div>
+	</div>
+	
+</div>
+ 
+
+
+<div id="balv_mod" class="region_2 balv_mod" data-region="">
+	<div class="region_header">
+		<div class="region_op j_op"> </div>
+		<div class="region_title region_icon j_title">热帖</div>
+	</div>
+	<div class="region_cnt">
+	<ul class="tieba_notice tieba_notice_theme2">
+      <li><a href="/jiaocheng/2013/0214/5.html">发布文档编辑器不显示</a></li>
+<li><a href="/plus/view.php?aid=4">《织梦A5dedecms织梦建站培训-</a></li>
+<li><a href="/jiaocheng/2013/0213/3.html">谁有Monkey录制的织梦仿站教程</a></li>
+<li><a href="/jiaocheng/2013/0213/1.html">让收费模板去死吧，华夏安全网</a></li>
+<li><a href="/jiaocheng/2013/0213/2.html">最新织梦dedecms5.7模板调用标</a></li>
+<li><a href="/jiaocheng/2013/0215/10.html">发帖测试2</a></li>
+<li><a href="/jiaocheng/2013/0215/9.html">现在发帖呢</a></li>
+
+</ul>
+	
+ 
+	</div>
+	<div class="region_footer"></div>
+</div>
+
+<!--广告2-->
+<div id="aside_ad" class="aside_ad_pb2">
+	<a class="aside_ad_pic" href="#" target="_blank"><img src="/templets/default/images/ad2.jpg" title="" alt=""></a>
+</div>
+<!--广告2-->
+		
+	<div id="cproshow" class="cpro_post cproshow_theme2"></div>
+	<div id="cprodata" style="width:200px;"></div>
+		</div>
+		
+	<div class="p_share_ding">
+    
+  <div class="p_sharebar sharebar_theme_2">
+	<div id="bdshare" data="{title:'分享到',wbuid:1673450172, text:'发布文档编辑器不显示_织梦'}" class="bdshare_t bds_tools tb_bdshare">
+			<span class="bds_more nopic">分享到:</span>
+			<a class="bds_qzone"></a>
+			<a class="bds_tieba"></a>
+			<a class="bds_tsina"></a>
+			<a class="bds_tqq"></a>
+			<a class="bds_renren"></a>
+			<a class="bds_mshare"></a>
+	</div>
+	
+</div>  <div id="tofrs_down" class="tofrs_down"><a href="/" title="织梦"><<返回织梦吧</a></div>  
+</div>
+<div id="editor" class="editor_theme_2">
+<a name="sub"></a>
+
+        <form action="#" method="post" name="feedback" onsubmit="return false;">
+          <input type="hidden" name="dopost" value="send" />
+          <input type="hidden" name="comtype" value="comments">
+          <input type="hidden" name="aid" value="5" />
+            <input type="hidden" name="feedbacktype"  value="feedback" id="dcmp-stand-neu" />          
+          <input type="hidden" name="fid" id='feedbackfid' value="0" />
+<div id="edit_parent">
+<div class="new_tiezi_tip">
+<div class="editor_title_txt">发表回复</div>
+</div>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr id="tt1360726833471" style="display:none;">
+<td width="49" valign="top" nowrap="" style="line-height:32px;">标　题:</td>
+<td>
+<a name="ju"></a>
+<div id="td1360726833471">
+<input id="title" class="edit_title_field" type="text" value="" name="title">
+</div>
+<div id="tE1360726833471" class="postErrorTitle"></div>
+</td>
+</tr>
+<tr>
+<td width="49" valign="top" nowrap="">内　容:</td>
+<td>
+<div style="position:relative;z-index:1000">
+<div id="ebt1360726833471" class="editor_tip_show" style="display: none;"></div>
+</div>
+<div id="eInput1360726833471" style="position:relative;">
+<div class="tb-editor-wrapper" style="width: 633px;">
+<div class="tb-editor-overlay" style="display: none;">
+<span class="close"></span>
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+<div class="tb-editor-overlay" style="display: none;">
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+          <div class="dcmp-content">
+            <script type="text/javascript">
+					//<![CDATA[
+					window.CKEDITOR_BASEPATH='/include/ckeditor/';
+					//]]>
+                    </script>
+            <script type="text/javascript" src="/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+            <script type="text/javascript">//<![CDATA[
+CKEDITOR.config.ubb_smiley = {"高兴":"{s:1}","撇嘴":"{s:2}","抓狂":"{s:3}","汗":"{s:4}","惊恐":"{s:5}","奋斗":"{s:6}","疑问":"{s:7}","晕":"{s:8}","偷笑":"{s:9}","可爱":"{s:10}","疑惑":"{s:11}","酷":"{s:12}","暴汗":"{s:13}","呕吐":"{s:14}","大笑":"{s:15}","色":"{s:16}"}
+//]]></script>
+<textarea name="msg" rows="8" cols="60"></textarea>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('msg', {"extraPlugins":"dedepage,multipic,addon,bbcode","fontSize_sizes":"30\/30%;50\/50%;100\/100%;120\/120%;150\/150%;200\/200%;300\/300%","disableObjectResizing":"true","smiley_path":"\/images\/smiley\/","smiley_images":["1.gif","2.gif","3.gif","4.gif","5.gif","6.gif","7.gif","8.gif","9.gif","10.gif","11.gif","12.gif","13.gif","14.gif","15.gif","16.gif"],"smiley_descriptions":["高兴","撇嘴","抓狂","汗","惊恐","奋斗","疑问","晕","偷笑","可爱","疑惑","酷","暴汗","呕吐","大笑","色"],"toolbar":[["Smiley","Image","Flash"]],"height":100,"skin":"kama"});
+//]]></script>
+ </div>
+
+
+</div>
+</div>
+</td>
+</tr>
+<tr id="pu1360726833471" style="">
+<td class="pt_uname" valign="top"></td>
+<td>
+<div class="editor_users">
+
+</span>
+<span id="mca1360726833471" style="color:#666"></span>
+</div>
+<div id="sp1360726833471" style="display:none"></div>
+</td>
+</tr>
+<tr id="cc1360726833471">
+<td class="pt_valid" valign="top" nowrap="nowrap">&nbsp;</td>
+<td valign="middle" nowrap="nowrap" align="left">
+<div id="cd1360726833471" class="pt_valid_code">
+<div class="clearfix">
+<div class="c_captcha_input_con j_input_con">
+ <div class="dcmp-userinfo" id="_ajax_feedback"> 网名:
+              <input type="text" name="username" size="16" class="ipt-txt"/>
+              
+              验证码:
+              <input type="text" name="validate" size="4" class="ipt-txt" style="text-transform:uppercase;"/>
+              <img src= "/include/vdimgck.php" id="validateimg" style="cursor:pointer" onclick="this.src=this.src+'?'" title="点击我更换图片" alt="点击我更换图片"  class="vdimg"/>
+              <input type="checkbox" name="notuser" id="dcmp-submit-guest" />
+              <label for="dcmp-submit-guest" />
+              匿名?
+              </label>
+            </div>
+            
+            <script language="javascript" type="text/javascript">CheckLogin();</script>
+            
+</div>
+<div class="c_captcha_sub_wrap j_captcha_content clearfix" style="display:none;">
+<div class="c_captcha_img j_captcha_img_wrapper"></div>
+<div class="c_captcha_a">
+<a class="j_captcha_img_change">看不清?</a>
+<a class="c_captcha_a_audio j_captcha_audio_switch">收听验证码</a>
+</div>
+<div class="c_captcha_audio">
+<img class="j_captcha_audio_icon c_captcha_audio_img" src="http://tieba.baidu.com/tb/img/audio.gif">
+<span class="j_captcha_audio_wrapper"></span>
+</div>
+</div>
+</div>
+<div class="c_captcha_error j_captcha_err"></div>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td class="pt_submit">
+
+<button type="button" onClick='PostComment()' class="subbtn_bg">发  表</button>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+
+<script language='javascript'>
+function LoadCommets(page)
+{
+		var taget_obj = document.getElementById('commetcontent');
+		var waithtml = "<div style='line-height:50px'><img src='/images/loadinglit.gif' />评论加载中...</div>";
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x', waithtml);
+		myajax.SendGet2("/plus/feedback_ajax.php?dopost=getlist&aid=5&page="+page);
+		DedeXHTTP = null;
+}
+function PostComment()
+{
+		var f = document.feedback;
+		var msg = CKEDITOR.instances.msg.getData();
+		var nface = '6';
+		var nfeedbacktype = 'feedback';
+		var nvalidate = '';
+		var nnotuser = '';
+		var nusername = '';
+		var npwd = '';
+		var taget_obj = $DE('commetcontentNew');
+		var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+		if(msg=='')
+		{
+			alert("评论内容不能为空！");
+			return;
+		}
+		if(f.validate)
+		{
+			if(f.validate.value=='') {
+				alert("请填写验证码！");
+				return;
+			}
+			else {
+				nvalidate = f.validate.value;
+			}
+		}
+		if(msg.length > 500)
+		{
+			alert("你的评论是不是太长了？请填写500字以内的评论。");
+			return;
+		}
+		if(f.feedbacktype) {
+			for(var i=0; i < f.feedbacktype.length; i++)
+				if(f.feedbacktype[i].checked) nfeedbacktype = f.feedbacktype[i].value;
+		}
+		/*
+		if(f.face) {
+			for(var j=0; j < f.face.length; j++)
+				if(f.face[j].checked) nface = f.face[j].value;
+		}
+		*/
+		if(f.notuser.checked) nnotuser = '1';
+		if(f.username) nusername = f.username.value;
+		if(f.pwd) npwd = f.pwd.value;
+		
+		var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+		myajax.sendlang = 'gb2312';
+		myajax.AddKeyN('dopost', 'send');
+		myajax.AddKeyN('aid', '5');
+		myajax.AddKeyN('fid', f.fid.value);
+		myajax.AddKeyN('face', nface);
+		myajax.AddKeyN('feedbacktype', nfeedbacktype);
+		myajax.AddKeyN('validate', nvalidate);
+		myajax.AddKeyN('notuser', nnotuser);
+		myajax.AddKeyN('username', nusername);
+		myajax.AddKeyN('pwd', npwd);
+		myajax.AddKeyN('msg', msg);
+		myajax.SendPost2('/plus/feedback_ajax.php');
+		//msg = '';
+		CKEDITOR.instances.msg.setData('');
+		//taget_obj.removeAttribute('id');
+		f.fid.value = 0;
+		if(f.validate)
+		{
+			if($DE('validateimg')) $DE('validateimg').src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+}
+function quoteCommet(fid)
+{
+	    document.feedback.fid.value = fid;
+}
+  
+function ajaxFeedback(aid, fid, type)
+{
+	
+	var taget_obj = $DE('ajaxfeedback_'+fid);
+	if(taget_obj.innerHTML == '')
+	{
+		var myajax = new DedeAjax(taget_obj, true, true, '', 'x');
+		myajax.SendGet2("/plus/feedback.php?aid="+aid+"&fid="+fid+"&action=quote&type=ajax");
+		eval('var result = typeof CKEDITOR.instances.msg_'+fid);
+		if(result != 'undefined')
+		{
+			// 删除实例
+			eval('var edit = CKEDITOR.instances.msg_'+fid);
+			CKEDITOR.remove(edit);
+		}
+		CKEDITOR.replace(document.getElementById('msg_'+fid) , CKEDITOR.instances.msg.config);
+		scroll(0, taget_obj.offsetTop - 120);
+		var formname = 'f = document.ajaxfeedback_'+fid;
+		eval(formname);
+		if(f.validate)
+		{
+			if($DE('vdimg_'+fid)) $DE('vdimg_'+fid).src = "/include/vdimgck.php?"+f.validate.value;
+			f.validate.value = '';
+		}
+		
+		DedeXHTTP = null;
+	}
+}
+
+
+
+function ajaxQuotePost(fid)
+{
+	var formname = 'f = document.ajaxfeedback_'+fid;
+	eval(formname);
+	//var f = document.formname;
+	//var f = f[0];
+	var nvalidate = '';
+	var nnotuser = '';
+	var nusername = '';
+	var npwd = '';
+	var taget_obj = $DE('commetcontentNew');
+	var waithtml = "<div style='line-height:30px'><img src='/images/loadinglit.gif' />正在发送中...</div>";
+	eval('var msg = CKEDITOR.instances.msg_'+fid+'.getData()');
+
+	if(f.validate)
+	{
+		if(f.validate.value=='') {
+			alert("请填写验证码！");
+			return;
+		}
+		else {
+			nvalidate = f.validate.value;
+		}
+	}
+	var myajax = new DedeAjax(taget_obj, false, true, '', '', waithtml);
+	
+	if(f.notuser.checked) nnotuser = '1';
+	if(f.username) nusername = f.username.value;
+	if(f.pwd) npwd = f.pwd.value;
+	
+	myajax.sendlang = 'gb2312';
+	myajax.AddKeyN('dopost', 'send');
+	myajax.AddKeyN('aid', '5');
+	myajax.AddKeyN('fid', f.fid.value);
+	myajax.AddKeyN('type', 'ajax');
+	myajax.AddKeyN('comtype', f.comtype.value);
+	myajax.AddKeyN('isconfirm','yes');
+	
+	myajax.AddKeyN('typeid', f.typeid.value);
+	myajax.AddKeyN('quotemsg', f.quotemsg.value);
+	myajax.AddKeyN('validate', nvalidate);
+	myajax.AddKeyN('notuser', nnotuser);
+	myajax.AddKeyN('username', nusername);
+	myajax.AddKeyN('pwd', npwd);
+	myajax.AddKeyN('msg', msg);
+	myajax.SendPost2('/plus/feedback_ajax.php');
+	//alert(f.quotemsg.value);
+	if($DE('ajaxfeedback_'+fid).innerHTML != null)
+	{
+		$DE('ajaxfeedback_'+fid).innerHTML = '';
+	}
+	scroll(0, taget_obj.offsetTop);
+}
+LoadCommets(1);
+</script>
+<!-- //评论内容区结束 -->
+
+</div>
+<!--两行-->
+<script type="text/javascript" id="bdshare_js" data="type=tools"></script>
+<!--单行-->
+<!--<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=10006&amp;mini=1"></script>-->
+<script type="text/javascript" id="bdshell_js"></script></div><script type="text/html" id="j_popWindow_tpl_1">
+
+</script>
+
+<div id="footer">
+Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有<br />
+本套模板由 <a href="http://www.dedemao.com/">织梦猫</a> 仿制
+</div>
+
+</div>
+</div>
+<script src="/templets/default/js/tieba.js"></script>
+<script src="/templets/default/js/tieba3.js"></script>
+<script src="/templets/default/js/tieba2.js"></script>
+
+<script>
+	if(!PageData.is_ipad){
+		(function() {
+			var forumSkinId = 202;
+			//创建一个全局的userSkinManager，用于页面皮肤设置操作
+			var userSkinManager = window.userSkinManager = new UserSkinManager();
+			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
+		})();
+	}
+</script>
+<script>
+	if(!PageData.is_ipad){
+		window.Common_GoTop();
+	}
+</script>
+</body>
+</html>

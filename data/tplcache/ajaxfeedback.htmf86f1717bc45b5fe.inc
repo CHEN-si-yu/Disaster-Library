@@ -1,0 +1,41 @@
+<?php
+$z[0]=Array("field","",260,283);
+$z[0][4]['name']="id";
+$z[1]=Array("global","",1721,1746);
+$z[1][4]['name']="cfg_cmsurl";
+$z[2]=Array("global","",1859,1884);
+$z[2][4]['name']="cfg_cmsurl";
+$z[3]=Array("php","\r\n            GetEditor('msg','',100,'Feedback','print','false',true);\r\n            ",1948,2053);
+$z[4]=Array("php","\r\n              if(\$cfg_mb_open=='Y') {\r\n              echo '网名:\r\n              <input type=\"text\" name=\"username\" size=\"16\" class=\"ipt-txt\"/>\r\n              ';\r\n              }\r\n              ",2662,2878);
+$z[5]=Array("php","\r\n              if(preg_match(\"/4/\",\$safe_gdopen)){\r\n              echo '验证码:\r\n              <input type=\"text\" name=\"validate\" size=\"4\" class=\"ipt-txt\" style=\"text-transform:uppercase;\"/>\r\n              <img src= \"'.\$cfg_cmspath.'/include/vdimgck.php\" id=\"validateimg\" style=\"cursor:pointer\" onclick=\"this.src=this.src+\\'?\\'\" title=\"点击我更换图片\" alt=\"点击我更换图片\"  class=\"vdimg\"/>';\r\n              }\r\n              ",2894,3340);
+$z[6]=Array("php","\r\n            if(\$cfg_mb_open=='Y') {\r\n            echo '\r\n            <script language=\"javascript\" type=\"text/javascript\">CheckLogin();</script>\r\n            ';\r\n            }\r\n            ",3547,3759);
+$z[7]=Array("global","",4694,4719);
+$z[7][4]['name']="cfg_cmsurl";
+$z[8]=Array("global","",4859,4885);
+$z[8][4]['name']="cfg_phpurl";
+$z[9]=Array("field","",4923,4939);
+$z[9][4]['name']="id";
+$z[10]=Array("global","",5326,5351);
+$z[10][4]['name']="cfg_cmsurl";
+$z[11]=Array("global","",6235,6263);
+$z[11][4]['name']="cfg_soft_lang";
+$z[12]=Array("field","",6329,6345);
+$z[12][4]['name']="id";
+$z[13]=Array("global","",6680,6705);
+$z[13][4]['name']="cfg_phpurl";
+$z[14]=Array("global","",6915,6940);
+$z[14][4]['name']="cfg_cmsurl";
+$z[15]=Array("global","",7305,7331);
+$z[15][4]['name']="cfg_phpurl";
+$z[16]=Array("global","",7865,7890);
+$z[16][4]['name']="cfg_cmsurl";
+$z[17]=Array("global","",8334,8359);
+$z[17][4]['name']="cfg_cmsurl";
+$z[18]=Array("global","",8838,8866);
+$z[18][4]['name']="cfg_soft_lang";
+$z[19]=Array("field","",8930,8946);
+$z[19][4]['name']="id";
+$z[20]=Array("global","",9402,9427);
+$z[20][4]['name']="cfg_phpurl";
+
+?>

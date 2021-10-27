@@ -1,0 +1,553 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>织梦吧_百度贴吧</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba2.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba3.css" />
+<link rel="stylesheet" href="/templets/default/style/skin.css" />
+</head>
+
+<body>
+<div id="com_userbar" style="z-index: 10005;">
+<ul>
+<li class="u_login">
+<a onclick="return false;" href="#">登录</a>
+</li>
+<li class="u_reg">
+<a onclick="return false;" href="#">注册</a>
+</li>
+</ul>
+</div>
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+
+	<div class="wrap_clear"></div>
+<div id="head" class="search search_theme_2 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+    <form name="f1" id="tb_header_search_form" class="f"  action="/f">
+              				<input autocomplete="off" size="42" tabindex="1" id="wd1" name="kw" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="进入贴吧" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"><a class="j_benba_search" href="#" onclick="return false;">吧内搜索</a></span>
+                  </form>
+  </div>
+
+</div>
+
+<div id="container">
+		<div class="above_nav" style="display:none">	</div>
+<div id="frs_nav" class="frs_nav_3" dr="B">
+	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/f?tp=0&kw=%D6%AF%C3%CE" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabmain" >织梦吧</a> </li><li class="divide" ></li><li class="icon_tab_focus" > <a class="icon_tab_discuss" href="/f?kw=%D6%AF%C3%CE&tp=0" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabdiscuss" id="icon_tab_discuss" >看贴</a> </li><li class="divide" ></li><li class="icon_tab " > <a class="icon_tab_picture" href="/f?kw=%D6%AF%C3%CE&tp=1" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabfrsphoto" id="icon_tab_photo" >看图</a> </li><li class="sub_divide" ></li><li class="small_tab" > <a href="/f/good?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabgood" >精品</a> </li><li class="divide" ></li><li class="small_tab" > <a href="/shipin/bw/forum/info?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabvideo" >视频</a> </li><li class="divide" ></li><li class="small_tab last" > <a href="/f/vote?kw=%D6%AF%C3%CE" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabvote" >投票</a> </li> </ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon refresh" id="refresh" href="&tp=0&pn=0" ></a> </li><li class='divide_line'></li><li class=" last" > <a class="nav_icon toggle" href="#" id="frs_old_version" ></a> </li> </ul><ul class="nav_center"> <li class=" first" > <a href="#" class="icon_add_post diff_tab" title="发表新贴" alt="发表新贴" id="add_post_btn" >发表新贴</a> </li> </ul> </div> </div>
+
+            <div class="dir_rank">
+            <div class="sign_rank_index_link"><a onclick="Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_bar_entr');" href="/sign/index?kw=%D6%AF%C3%CE&type=1" target="_blank">计算机软件签到排名</a></div>
+            <div>：本吧昨日排名靠后，不到十人签到，帮忙签到吧~~</div>
+            <div class="rank_sep"></div>
+            <div class="week_rank">周排名：<span class="rank_number">260</span></div>
+                        <div class="rank_sep"></div>
+            <div class="month_rank">月排名：<span class="rank_number">228</span></div>
+                                </div>
+    	<div class="frs_content clearfix" >
+	    <div class="contet_wrap" id="contet_wrap">
+            <div id="content_leftList" class="content_leftList clearfix">
+<!--    <script>
+        Interview = window.Interview || {};
+        FrsThreadItem = window.FrsThreadItem || {};
+        FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
+        FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
+        Interview.stopGetData = !!"0";
+        FrsThreadItem.LivePost.data.stopGetData = !!"0";
+    </script>-->
+
+<ul id="thread_list" class="threadlist">
+<li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="197次阅读" class="threadlist_rep_num j_rp_num">197</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/jiaocheng/2013/0214/5.html" title="发布文档编辑器不显示" class="j_th_tit">发布文档编辑器不显示</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author ">admin</span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">发布文档编辑器不显示 ，...</div>
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="/uploads/allimg/130214/1519422261-0-lp.jpg" original="/uploads/allimg/130214/1519422261-0-lp.jpg"  bpic="/uploads/allimg/130214/1519422261-0-lp.jpg" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+
+			
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="发布时间">02-14</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="167次阅读" class="threadlist_rep_num j_rp_num">167</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/plus/view.php?aid=4" title="《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]" class="j_th_tit">《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author ">admin</span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">A5dedecms织梦建站培训-第1课.zip 51.2MB A5dedecms织梦建站培训-第2课.rar 56.7MB A5dedecms织梦建站培训-第3课.rar 49.1MB A5dedecms织梦建站培训-第4课.rar 29.5MB A5dedecms织梦建站培训-第5课(上).rar 25MB A5dedecms织梦建站培训-第5课(下).zip 67MB A...</div>
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="/images/defaultpic.gif" original="/images/defaultpic.gif"  bpic="/images/defaultpic.gif" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+
+			
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="发布时间">02-13</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="132次阅读" class="threadlist_rep_num j_rp_num">132</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/jiaocheng/2013/0213/3.html" title="谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分" class="j_th_tit">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author ">admin</span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分 麻烦贡献一下 只为学习 630139444@qq.com...</div>
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="/images/defaultpic.gif" original="/images/defaultpic.gif"  bpic="/images/defaultpic.gif" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+
+			
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="发布时间">02-13</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="77次阅读" class="threadlist_rep_num j_rp_num">77</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/jiaocheng/2013/0213/2.html" title="最新织梦dedecms5.7模板调用标签大全" class="j_th_tit">最新织梦dedecms5.7模板调用标签大全</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author ">admin</span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">织梦ＤＥＤＥ模板调用标签大全-提高制作模板速度 -------------------------------------------------------------------------------- 003 关键描述调用标签： meta name=keywords content={dede:field name=keywords/} 004 meta name=description content=...</div>
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="/images/defaultpic.gif" original="/images/defaultpic.gif"  bpic="/images/defaultpic.gif" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+
+			
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="发布时间">02-13</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/jiaocheng/2013/0213/1.html" title="让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！" class="j_th_tit">让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author" title="主题作者">
+			<span class="tb_icon_author ">admin</span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">下载地址 留下邮箱 我发给你！！...</div>
+			<ul class="threadlist_media j_threadlist_media" id="fm2126307861"><li><div class="vpic_wrap"><img src="/images/defaultpic.gif" original="/images/defaultpic.gif"  bpic="/images/defaultpic.gif" class="threadlist_pic j_m_pic " loadprc="next" /></div><div class="threadlist_pic_highlight j_m_pic_light"></div></li></ul>
+
+			
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="最后回复人"><a href="/i/sys/jump?un=nn6n" target="_blank">nn6n</a></span>
+			<span class="threadlist_reply_date j_reply_data" title="发布时间">02-13</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li>
+</ul>
+<script>if(typeof PDC != 'undefined'){PDC.mark('thread_list_end');}</script><div id="frs_list_pager" class="pager clearfix">
+<ul>
+共1页/5条记录
+</ul>
+</div></div>        </div>
+		<div id="aside" class="aside">
+			<div class="region_2 sign_mod2" id="sign_mod">
+    <div class="sign_tip_container">
+        <div class="j_succ_info sign_succ2" style="display:none">
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
+	<div class="region_header">
+		<div class="region_op j_op"> </div>
+		<div class="region_title region_icon j_title">本吧信息</div>
+	</div>
+	<div class="region_cnt">
+		
+
+	<h4><a href="#" class="manager_btn" onclick="return false;">吧主</a>：</h4>
+	<ul>
+			<li>
+  		<a href="/i/sys/jump?un=%D6%AF%C3%CE%D4%C6%BC%C6%CB%E3" target=_blank>织梦云计算</a>
+  		  	</li>
+      <li style="display:none">
+      <span id="tbManagerApply">
+            </span>
+  	</li>
+		<li id="tbManagerCandidatesNum" style="display:none">
+				</li>
+	</ul>
+<h4>会员：</h4>
+<ul>
+	<li>
+	<a id="member_name_link" href="/f/like/manage/list?kw=%D6%AF%C3%CE" target="_blank">织梦者</a>
+	<span class="member_num_o">共<span class="member_num">508</span>人</span>
+	</li>
+	<li id="hall_in" class="hall_in" style="display:none;"><a href="/fame-hall/index_%D6%AF%C3%CE" target="_blank">名人堂&gt;&gt;</a></li>
+</ul>
+<h4 class="forum_dir_info">目录：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+					<a href="/f/fdir?fd=%BF%C6%D1%A7%BC%BC%CA%F5&sd=%BC%C6%CB%E3%BB%FA%C8%ED%BC%FE"  stats-data="area=frs_dir"  target="_blank">计算机软件</a>
+			</li>
+</ul>
+
+
+ 
+	</div>
+	<div class="region_footer"></div>
+</div>
+
+<div id="zyq" class="zyq_2" ><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
+<div class="tl">
+	<div class="mod_edit_wrap"></div>
+	<div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">自定义链接</span></div>
+</div>
+<div class="cnt">
+<ul class="zyq_mod_link_items">
+
+<li><a href="http://www.zhimengkeji.com" target="_blank" class="j_mod_item">织梦</a></li>
+
+<li><a href="http://www.zhimengkeji.com/domain.asp" target="_blank" class="j_mod_item">COM/NET/ORG/域名注册35一年</a></li>
+
+<li><a href="http://www.zhimengkeji.com/hosting.asp?sub=vhost1" target="_blank" class="j_mod_item">香港空间</a></li>
+
+<li><a href="http://www.zhimengkeji.com/hosting.asp?sub=vhost4" target="_blank" class="j_mod_item">美国独立IP空间</a></li>
+
+<li><a href="http://www.zhimengkeji.com" target="_blank" class="j_mod_item">织梦科技</a></li>
+
+</ul>
+</div>
+</div><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
+	<div class="tl"><div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情贴吧</span></div>
+	<div class="cnt">
+	
+	<ul class="zyq_mod_friend_items">
+	  
+	  <li><a href="/f?kw=%D6%AF%C3%CE%BF%C6%BC%BC&frs=yqtb" target="_blank" class="j_mod_item">织梦科技</a></li>
+	  
+	  <li><a href="/f?kw=phpwind&frs=yqtb" target="_blank" class="j_mod_item">phpwind</a></li>
+	  
+	  <li><a href="/f?kw=%D5%BE%B3%A4%C1%AA%C3%CB&frs=yqtb" target="_blank" class="j_mod_item">站长联盟</a></li>
+	  
+	</ul>
+	
+	</div>
+</div></div>
+
+	
+		
+
+		</div>
+	</div>	
+</div>	<div class="th_footer_2">
+		        <div class="th_footer_l">
+    				共有主题数<span class="red">480</span>个，贴子数<span class="red">2183</span>篇，
+            <a class="fans_name" href="                /f/like/manage/list?kw=%D6%AF%C3%CE            " target="_blank">织梦者</a>数<span class="red">508</span>
+						</div>
+
+		 		 		 <a href="/tousu/new/add?frstitle=%D6%AF%C3%CE" target="_blank" class="btn_tousu fr" data-checkun="un">贴吧投诉</a>
+		 		 </div>
+
+<div id="editor" class="frs_rich_editor" data-editor="{forbid_flag:'0',has_grade:'1',u_forum_name:'%D6%AF%C3%CE',can_post:'1',is_notitle:false,is_login:'1'}" data-postor="{kw:'织梦',ie:'utf-8',rich_text:'1',floor_num:'0',fid:'1400850',tid:'0'}">
+<a name="sub"></a>
+<form id="pt1360681535829" autocomplete="off" method="post">
+<div id="edit_parent">
+<div class="new_tiezi_tip">
+<div class="editor_title_txt">发表新贴</div>
+</div>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr id="tt1360681535829" style="">
+<td width="49" valign="top" nowrap="" style="line-height:32px;">标　题:</td>
+<td>
+<a name="ju"></a>
+<div id="td1360681535829">
+<input id="title1" class="edit_title_field" type="text" value="" name="title">
+</div>
+<div id="tE1360681535829" class="postErrorTitle"></div>
+</td>
+</tr>
+<tr>
+<td width="49" valign="top" nowrap="">内　容:</td>
+<td>
+<div style="position:relative;z-index:1000">
+<div id="ebt1360681535829" class="editor_tip_show" style="display: none;"></div>
+</div>
+<div id="eInput1360681535829" style="position:relative;">
+<div class="tb-editor-wrapper" style="width: 633px;">
+<div class="tb-editor-overlay" style="display: none;">
+<span class="close"></span>
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+<div class="tb-editor-overlay" style="display: none;">
+<span class="arrow"></span>
+<div class="overlay-content"></div>
+</div>
+<div class="tb-editor-toolbar">
+<span class="image" data-cmd="image"></span>
+<label></label>
+<span class="flash" data-cmd="flash"></span>
+<label></label>
+<span class="music" data-cmd="music"></span>
+<label></label>
+<span class="smiley" data-cmd="smiley"></span>
+<label></label>
+<span class="picasso" data-cmd="picasso"></span>
+<label></label>
+<span class="cut_screen" data-cmd="unabled_cut"></span>
+<label></label>
+<span class="idisk" data-cmd="idisk"></span>
+</div>
+<div class="tb-editor-editarea-wrapper">
+<div class="tb-editor-editarea" contenteditable="true" style="height: 193px; min-height: 193px; display: block; position: relative;">
+<br>
+</div>
+<div class="box-holder" style="display: none;">
+<span class="box-title">
+想用@提到谁？
+<span></span>
+</span>
+<ul class="box-ul-empty"></ul>
+</div>
+</div>
+<div class="storageTip" style="display: none;">你上次未发表的内容已自动恢复</div>
+<div class="tb-editor-overlay idisk_holder" style="left: -1000px;">
+<div class="idisk_btn_container">
+<button id="idisk_btn" style="display: none;">上传文件</button>
+<span>正在连接百度云，请稍候...</span>
+</div>
+还能上传
+<em id="attachmentNumberCount">5</em>
+个附件，每个附件小于
+<em>200.00MB</em>
+<br>
+附件将同步到百度云网盘，您的剩余空间：
+<em id="idisk_unused"></em>
+<a target="_blank" href="http://pan.baidu.com/">整理网盘</a>
+<div class="close"></div>
+<div class="arrow"></div>
+</div>
+</div>
+</div>
+<textarea id="textInput" style="display:none"></textarea>
+<div id="co1360681535829" class="postErrorContent"></div>
+</td>
+</tr>
+<tr id="pu1360681535829" style="">
+<td class="pt_uname" valign="top"></td>
+<td>
+<div class="editor_users">
+<label style="display: none;">
+<input id="pl1360681535829" type="radio" checked="checked" name="post_author_type">
+884358
+</label>
+<span id="pac1360681535829" style="display:none;">
+<label style="display: none;">
+<input id="pa1360681535829" type="radio" name="post_author_type">
+匿名发表
+</label>
+</span>
+<span id="mca1360681535829" style="color:#666"></span>
+</div>
+<div id="sp1360681535829" style="display:none"></div>
+</td>
+</tr>
+<tr id="cc1360681535829" style="display:none;">
+<td class="pt_valid" valign="top" nowrap="nowrap">
+<label style="line-height:24px;" for="captcha">验证码:</label>
+</td>
+<td valign="middle" nowrap="nowrap" align="left">
+<div id="cd1360681535829" class="pt_valid_code">
+<div class="clearfix">
+<div class="c_captcha_input_con j_input_con">
+<input class="c_captcha_input_normal j_captcha_input" maxlength="10" size="10" autocomplete="off" style="ime-mode:disabled ">
+</div>
+<div class="c_captcha_sub_wrap j_captcha_content clearfix" style="display:none;">
+<div class="c_captcha_img j_captcha_img_wrapper"></div>
+<div class="c_captcha_a">
+<a class="j_captcha_img_change">看不清?</a>
+<a class="c_captcha_a_audio j_captcha_audio_switch">收听验证码</a>
+</div>
+<div class="c_captcha_audio">
+<img class="j_captcha_audio_icon c_captcha_audio_img" src="http://tieba.baidu.com/tb/img/audio.gif">
+<span class="j_captcha_audio_wrapper"></span>
+</div>
+</div>
+</div>
+<div class="c_captcha_tip j_captcha_tip">请点击后输入验证码</div>
+<div class="c_captcha_error j_captcha_err"></div>
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td class="pt_submit">
+<input id="aps1360681535829" class="subbtn_bg" type="submit" value=" 发 表 ">
+<span class="subTip">Ctrl+Enter快捷发表</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+
+
+<div id="footer">                                                                                                         
+	<span>&copy;2013 Baidu</span>
+	<a href="/tb/eula.html" target="_blank">贴吧协议</a>
+	<span>|</span>
+	<a href="http://tieba.baidu.com/tb/cms/manager_apply/bz_agreement.html" target="_blank">吧主协议</a>
+	<span>|</span>
+	<a href="/f?kw=贴吧意见反馈&ie=utf-8" target="_blank">意见反馈</a>
+	<span>|</span>
+	<a href="/tb/zt/declare/" target="_blank">收费删贴警示</a>
+</div>
+
+</div>
+</div>
+
+<script src="/templets/default/js/tieba.js"></script>
+<!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+
+<script src="/templets/default/js/tieba2.js"></script>
+<!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
+
+
+<script>
+	   _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version){
+			
+			var frsNavParams = {
+
+				forum : {
+					id : 1400850,
+					name :'织梦',
+					name_u :'%D6%AF%C3%CE',
+					forbid_flag : 0				},
+				page : "main",
+				type : "album",
+				tbs : ''
+			};  	  
+			_.Module.use('common/widget/Tbnav', ['frs_nav',frsNavParams,version], function(){
+					common.Tbnav.run();
+				});
+		});
+	
+
+    $(document).ready(function(){
+        $(".signrank_crown").click(function(){
+             Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
+             window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
+             return false;
+        });
+    });
+</script>
+
+
+
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+<script src="/templets/default/js/tieba3.js"></script>
+
+<script>
+if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
+  TbCom.defaultLogicInit(PageData.user, 'forum');
+}
+</script>
+<!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
+<script id="pageconf_tbskin_version" type="text/html">20130201</script>
+<script>
+	if(!PageData.is_ipad){
+		(function() {
+			var forumSkinId = 202;
+			//创建一个全局的userSkinManager，用于页面皮肤设置操作
+			var userSkinManager = window.userSkinManager = new UserSkinManager();
+			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
+		})();
+	}
+</script>
+
+<script>
+	if(!PageData.is_ipad){
+		window.Common_GoTop();
+	}
+</script>
+
+
+</body>
+
+</html>

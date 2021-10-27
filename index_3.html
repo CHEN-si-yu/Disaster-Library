@@ -1,0 +1,382 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>织梦</title>
+<link rel="shortcut icon" href="/favicon.ico" />
+<link rel="stylesheet" href="/templets/default/style/tieba.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba2.css" />
+<link rel="stylesheet" href="/templets/default/style/tieba3.css" />
+<link rel="stylesheet" href="/templets/default/style/skin.css" />
+<script type="text/javascript" src="/member/templets/js/checkSubmit.js"></script>
+</head>
+
+<body>
+<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+
+<script language="javascript" type="text/javascript">
+<!--
+	$(function(){
+		$("a[_for]").mouseover(function(){
+			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+			$(this).addClass("thisclass").blur();
+			$("#"+$(this).attr("_for")).show();
+		});
+		$("a[_for=uc_member]").mouseover();
+		$("a[_for=flink_1]").mouseover();
+	});
+	
+	function CheckLogin(){
+	  var taget_obj = document.getElementById('_userlogin');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_loginsta.php");
+	  DedeXHTTP = null;
+	}
+	
+	function CheckLogin2(){
+	  var taget_obj = document.getElementById('_fatie');
+	  myajax = new DedeAjax(taget_obj,false,false,'','','');
+	  myajax.SendGet2("/member/ajax_fatie.php");
+	  DedeXHTTP = null;
+	}	
+-->
+</script>
+<div id="com_userbar" style="z-index: 10005;">
+<div id="_userlogin">
+<ul>
+<li class="u_login">
+<a href="#">登录</a>
+</li>
+<li class="u_reg">
+<a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
+</li>
+</ul>
+</div>
+</div>
+<script language="javascript" type="text/javascript">CheckLogin();</script>
+<div id="local_flash_cnt"></div>
+<div class="wrap1">
+<div class="wrap2">
+
+	<div class="wrap_clear"></div>
+<div id="head" class="search search_theme_2 clearfix">
+    <div class="s_nav">
+    <a href="/" class="s_logo" title="到贴吧首页"></a>
+    <div class="s_tab hdtag">
+      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
+    </div>
+  </div>
+  <div>
+    <form name="f1" id="tb_header_search_form" class="f"  action="/f">
+              				<input autocomplete="off" size="42" tabindex="1" id="wd1" name="kw" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="进入贴吧" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"><a class="j_benba_search" href="#" onclick="return false;">吧内搜索</a></span>
+                  </form>
+  </div>
+
+</div>
+
+
+<div id="container">
+		<div class="above_nav" style="display:none">	</div>
+<div id="frs_nav" class="frs_nav_3" dr="B">
+	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/f?tp=0&kw=%D6%AF%C3%CE" title="织梦吧" stats-data="fr=tb0_forum&st_mod=frs&st_value=tabmain" >织梦吧</a> </li></ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon refresh" id="refresh" href="&tp=0&pn=0" ></a> </li><li class='divide_line'></li><li class=" last" > <a class="nav_icon toggle" href="#" id="frs_old_version" ></a> </li> </ul><ul class="nav_center"> <li class=" first" > <a href="#" class="icon_add_post diff_tab" title="发表新贴" alt="发表新贴" id="add_post_btn" >发表新贴</a> </li> </ul> </div> </div>
+
+            <div class="dir_rank">
+
+            <div>共有主题：10
+个</div>
+            <div class="rank_sep"></div>
+            <div class="week_rank">评论数：<span class="rank_number">11
+个</span></div>
+                        <div class="rank_sep"></div>
+            <div class="month_rank">会员数：<span class="rank_number">2名</span></div>
+                                </div>
+    	<div class="frs_content clearfix" >
+	    <div class="contet_wrap" id="contet_wrap">
+            <div id="content_leftList" class="content_leftList clearfix">
+<!--    <script>
+        Interview = window.Interview || {};
+        FrsThreadItem = window.FrsThreadItem || {};
+        FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
+        FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
+        Interview.stopGetData = !!"0";
+        FrsThreadItem.LivePost.data.stopGetData = !!"0";
+    </script>-->
+
+<ul id="thread_list" class="threadlist">
+<li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
+	<div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
+</div>
+<div class="threadlist_li_right">
+	<div class="threadlist_lz clearfix">
+		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+			<a href="/jiaocheng/2013/0213/1.html" title="让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！" class="j_th_tit">让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！</a>
+			</span>
+			
+		</div>
+		<div class="threadlist_author">
+			<span class="tb_icon_author "></span>
+		</div>
+	</div>
+	<div class="threadlist_detailclearfix">	
+		<div class="threadlist_text">
+			<div class="threadlist_abs threadlist_abs_onlyline">下载地址 留下邮箱 我发给你！！...</div>
+				
+		</div>
+		<div class="threadlist_author">
+                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+			<span title="发布时间">02-13</span>
+		</div>
+	</div>
+</div>
+<div class="clear"></div>
+</li>
+</ul>
+<script>if(typeof PDC != 'undefined'){PDC.mark('thread_list_end');}</script><div id="frs_list_pager" class="pager clearfix">
+<ul>
+ 共3页/7条记录  <a href='index_1.html'>首页</a>
+ <a href='index_2.html'>上一页</a>
+ <a href='index_1.html'>1</a>
+<a href='index_2.html'>2</a>
+<strong>3</strong>
+  <a href='#'>末页</a>
+ 
+</ul>
+</div></div>        </div>
+		<div id="aside" class="aside">
+			<div class="region_2 sign_mod2" id="sign_mod">
+    <div class="sign_tip_container">
+        <div class="j_succ_info sign_succ2" style="display:none">
+        </div>
+    </div>
+</div>
+ 
+
+
+
+
+<div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
+	<div class="region_header">
+		<div class="region_op j_op"> </div>
+		<div class="region_title region_icon j_title">本吧信息</div>
+	</div>
+	<div class="region_cnt">
+		
+
+	<h4>吧主：</h4>
+	<ul>
+			<li>
+  		     Admin
+  		  	</li>
+      <li style="display:none">
+      <span id="tbManagerApply">
+            </span>
+  	</li>
+		<li id="tbManagerCandidatesNum" style="display:none">
+				</li>
+	</ul>
+<h4>欢迎最新会员：</h4>
+<ul>
+	<li>
+	jason
+	</li>
+</ul>
+<h4>共有会员：</h4>
+<ul>
+	<li>
+	2名
+	</li>
+</ul>
+<h4 class="forum_dir_info">今日发布主题：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+篇
+	</li>
+</ul>
+<h4 class="forum_dir_info">本月发布主题：</h4>
+<ul class="forum_dir_info bottom_list">
+	<li>
+10篇
+	</li>
+</ul>
+
+
+ 
+	</div>
+	<div class="region_footer"></div>
+</div>
+
+<div id="zyq" class="zyq_2" ><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
+<div class="tl">
+	<div class="mod_edit_wrap"></div>
+	<div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">分类</span></div>
+</div>
+<div class="cnt">
+<ul class="zyq_mod_link_items">
+
+<li><a href='/plus/list.php?tid=1'>织梦模板</a></li>
+
+<li><a href='/plus/list.php?tid=2'>织梦教程</a></li>
+
+</ul>
+</div>
+</div><!--STATUS OK-->
+<div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
+	<div class="tl"><div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情链接</span></div>
+	<div class="cnt">
+	
+	<ul class="zyq_mod_friend_items">
+    <li><a href='http://www.dedemao.com'>织梦猫</a></li>
+<li><a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> </li><li><a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> </li><li><a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> </li>
+
+	  
+	</ul>
+	
+	</div>
+</div></div>
+
+	
+		
+
+		</div>
+	</div>	
+</div>
+
+<div id="editor" class="frs_rich_editor">
+<a name="sub"></a>
+<div id="_fatie">
+<form name="addcontent" action="/member/article_add.php" method="post" enctype="multipart/form-data" onsubmit="return checkSubmit();">
+<input type="hidden" name="dopost" value="save" />
+<input type="hidden" name="channelid" value="1" />
+<input name="tags" type="hidden" id="tags" maxlength="100" class="intxt" value=""/>          
+<input type="hidden" name="writer" id="writer" value="884358" maxlength="100" class="intxt" style="width:219px"/>
+<input type="hidden" name="typeid" value="2" maxlength="100" class="intxt" style="width:219px"/>
+<input type="hidden" name="mtypesid" value="0" maxlength="100" class="intxt" style="width:219px"/>
+<input type="hidden" name="description" value="" class="intxt" style="width:219px"/>
+<div id="edit_parent">
+<div class="new_tiezi_tip">
+<div class="editor_title_txt">发表新贴</div>
+</div>
+<table width="100%" cellspacing="0" cellpadding="3" border="0">
+<tbody>
+<tr style="">
+<td width="49" valign="top" nowrap="" style="line-height:32px;">标　题:</td>
+<td>
+<a name="ju"></a>
+<div>
+<input id="title" class="edit_title_field" type="text" value="" name="title">
+</div>
+<div class="postErrorTitle"></div>
+</td>
+</tr>
+<tr>
+<td width="49" valign="top" nowrap="">内　容:</td>
+<td width="650px">
+<textarea name="body" rows="8" cols="60">你还没有登录，请登录后再发帖</textarea>
+<script type="text/javascript">//<![CDATA[
+window.CKEDITOR_BASEPATH='/include/ckeditor/';
+//]]></script>
+<script type="text/javascript" src="/include/ckeditor/ckeditor.js?t=B8DJ5M3"></script>
+<script type="text/javascript">//<![CDATA[
+CKEDITOR.replace('body', {"extraPlugins":"dedepage,multipic,addon","toolbar":[["Smiley","Image","Flash"]],"height":150,"skin":"kama"});
+//]]></script>
+
+</td>
+</tr>
+<tr>
+<td class="pt_valid" valign="top" nowrap="nowrap">
+<label style="line-height:24px;" for="captcha">验证码:</label>
+</td>
+<td valign="middle" nowrap="nowrap" align="left">
+<div class="pt_valid_code">
+<div class="clearfix">
+<div class="c_captcha_input_con j_input_con">
+<input class="c_captcha_input_normal j_captcha_input" maxlength="10" size="10" style="width:50px;text-transform:uppercase;" name="vdcode" id="vdcode"><img src="../include/vdimgck.php" alt="看不清？点击更换" align="absmiddle" style="cursor:pointer" onclick="this.src=this.src+'?'" />
+</div>
+
+</div>
+
+</div>
+</td>
+</tr>
+<tr>
+<td> </td>
+<td class="pt_submit">
+<input id="aps1360681535829" class="subbtn_bg" type="submit" value=" 发 表 ">
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</form>
+</div>
+</div>
+
+<script language="javascript" type="text/javascript">CheckLogin2();</script>
+<div id="footer">
+Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有<br />
+本套模板由 <a href="http://www.dedemao.com/">织梦猫</a> 仿制
+</div>
+
+</div>
+</div>
+
+<script src="/templets/default/js/tieba.js"></script>
+<!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+
+<script src="/templets/default/js/tieba2.js"></script>
+<!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
+
+
+<script>
+	   _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version){			
+			var frsNavParams = {
+				forum : {
+					id : 1400850,
+					name :'织梦',
+					name_u :'%D6%AF%C3%CE',
+					forbid_flag : 0				},
+				page : "main",
+				type : "album",
+				tbs : ''
+			};  	  
+			_.Module.use('common/widget/Tbnav', ['frs_nav',frsNavParams,version], function(){
+					common.Tbnav.run();
+				});
+		});	
+    $(document).ready(function(){
+        $(".signrank_crown").click(function(){
+             Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
+             window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
+             return false;
+        });
+    });
+</script>
+<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+<script src="/templets/default/js/tieba3.js"></script>
+<script>
+if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
+  TbCom.defaultLogicInit(PageData.user, 'forum');
+}
+</script>
+<!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
+<script id="pageconf_tbskin_version" type="text/html">20130201</script>
+<script>
+	if(!PageData.is_ipad){
+		(function() {
+			var forumSkinId = 202;
+			//创建一个全局的userSkinManager，用于页面皮肤设置操作
+			var userSkinManager = window.userSkinManager = new UserSkinManager();
+			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
+		})();
+	}
+</script>
+
+<script>
+	if(!PageData.is_ipad){
+		window.Common_GoTop();
+	}
+</script>
+</body>
+</html>
