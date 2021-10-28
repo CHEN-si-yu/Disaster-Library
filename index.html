@@ -1,531 +1,622 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>织梦</title>
-<link rel="shortcut icon" href="/favicon.ico" />
-<link rel="stylesheet" href="/templets/default/style/tieba.css" />
-<link rel="stylesheet" href="/templets/default/style/tieba2.css" />
-<link rel="stylesheet" href="/templets/default/style/tieba3.css" />
-<link rel="stylesheet" href="/templets/default/style/skin.css" />
-<script type="text/javascript" src="/member/templets/js/checkSubmit.js"></script>
+    <script type="text/javascript" src="http://static.tieba.baidu.com/tb/static-common/widget/tbnav/tbnav_cookie.js"></script>
+    <script type="text/javascript" src="http://static.tieba.baidu.com/tb/static-common/widget/tbnav/tbnav_version.js"></script>
+    <script type="text/javascript" src="http://static.tieba.baidu.com/tb/static-common/widget/tbnav/tbnav_cookie.js"></script>
+    <script type="text/javascript" src="http://static.tieba.baidu.com/tb/static-common/widget/tbnav/tbnav_version.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+    <title>织梦</title>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="stylesheet" href="/templets/default/style/tieba.css">
+    <link rel="stylesheet" href="/templets/default/style/tieba2.css">
+    <link rel="stylesheet" href="/templets/default/style/tieba3.css">
+    <link rel="stylesheet" href="/templets/default/style/skin.css">
+    <script type="text/javascript" src="/member/templets/js/checkSubmit.js"></script>
+    <link id="css_skin" href="20130201" rel="stylesheet">
+    <script type="text/javascript" src="/tb/static-common/component/commonLogic/common/common_default_merger.js?v=1.29"></script>
+    <script type="text/javascript" src="/tb/static-common/component/commonLogic/common/common_default_merger.js?v=1.29"></script>
 </head>
 
-<body>
-<script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
+<body class="skin_202">
+    <script language="javascript" type="text/javascript" src="/include/dedeajax2.js"></script>
 
-<script language="javascript" type="text/javascript">
-<!--
-	$(function(){
-		$("a[_for]").mouseover(function(){
-			$(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
-			$(this).addClass("thisclass").blur();
-			$("#"+$(this).attr("_for")).show();
-		});
-		$("a[_for=uc_member]").mouseover();
-		$("a[_for=flink_1]").mouseover();
-	});
-	
-	function CheckLogin(){
-	  var taget_obj = document.getElementById('_userlogin');
-	  myajax = new DedeAjax(taget_obj,false,false,'','','');
-	  myajax.SendGet2("/member/ajax_loginsta.php");
-	  DedeXHTTP = null;
-	}
-	
-	function CheckLogin2(){
-	  var taget_obj = document.getElementById('_fatie');
-	  myajax = new DedeAjax(taget_obj,false,false,'','','');
-	  myajax.SendGet2("/member/ajax_fatie.php");
-	  DedeXHTTP = null;
-	}	
--->
-</script>
-<div id="com_userbar" style="z-index: 10005;">
-<div id="_userlogin">
-<ul>
-<li class="u_login">
-<a href="/member/login.php">登录</a>
-</li>
-<li class="u_reg">
-<a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>
-</li>
-</ul>
-</div>
-</div>
-<script language="javascript" type="text/javascript">CheckLogin();</script>
-<div id="local_flash_cnt"></div>
-<div class="wrap1">
-<div class="wrap2">
-
-	<div class="wrap_clear"></div>
-<div id="head" class="search search_theme_2 clearfix">
-    <div class="s_nav">
-    <a href="/" class="s_logo" title="到贴吧首页"></a>
-    <div class="s_tab hdtag">
-      <a href="http://news.baidu.com/ns?cl=2&rn=20&tn=news&" param="word" >新闻</a>&#12288;<a href="http://www.baidu.com/s?cl=3&" param="wd" >网页</a>&#12288;<b>贴吧</b>&#12288;<a href="http://zhidao.baidu.com/q?ct=17&pn=0&tn=ikaslist&rn=10&" param="word" >知道</a>&#12288;<a param="key" href="http://music.baidu.com/search?fr=tieba&">音乐</a>&#12288;<a href="http://image.baidu.com/i?tn=baiduimage&ct=201326592&lm=-1&cl=2&" param="word" >图片</a>&#12288;<a href="http://video.baidu.com/v?ct=301989888&rn=20&pn=0&db=0&s=21&" param="word" >视频</a>&#12288;<a href="http://map.baidu.com/m?fr=map006&" param="word" >地图</a>&#12288;<a href="http://baike.baidu.com/" param="searchword/?pic=1&fr=tieba&word" >百科</a>&#12288;<a href="http://wenku.baidu.com/search?" param="word" >文库</a>&#12288;<a href="http://xiangce.baidu.com/home"  class="j_xiangce_tab">相册</a>
-    </div>
-  </div>
-  <div>
-      <form  name="formsearch" action="/plus/search.php">
-<input type="hidden" name="kwtype" value="0" />      
-              				<input size="42" tabindex="1" id="search-keyword" name="q" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech" /><span class="s_btn_wr"><input id="search_submit" type="submit" value="吧内搜索" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'" /></span><span class="s_tools"></span>
-                  </form>
-  </div>
-
-</div>
-
-
-<div id="container">
-		<div class="above_nav" style="display:none">	</div>
-<div id="frs_nav" class="frs_nav_3" dr="B">
-	<div id="frs_nav_wrap" class="nav_wrap" ><ul class="nav_left"> <li class=" first" > <a class="nav_forum_name" href="/" title="织梦吧">织梦吧</a> </li></ul><ul class="nav_right"> <li class=" first" > <a class="nav_icon refresh" id="refresh" href="&tp=0&pn=0" ></a> </li><li class='divide_line'></li><li class=" last" > <a class="nav_icon toggle" href="#" id="frs_old_version" ></a> </li> </ul><ul class="nav_center"> <li class=" first" > <a href="#" class="icon_add_post diff_tab" title="发表新贴" alt="发表新贴" id="add_post_btn" >发表新贴</a> </li> </ul> </div> </div>
-
-            <div class="dir_rank">
-
-            <div>共有主题：11
-个</div>
-            <div class="rank_sep"></div>
-            <div class="week_rank">评论数：<span class="rank_number">14
-个</span></div>
-                        <div class="rank_sep"></div>
-            <div class="month_rank">会员数：<span class="rank_number">2名</span></div>
-                                </div>
-    	<div class="frs_content clearfix" >
-	    <div class="contet_wrap" id="contet_wrap">
-            <div id="content_leftList" class="content_leftList clearfix">
-<!--    <script>
-        Interview = window.Interview || {};
-        FrsThreadItem = window.FrsThreadItem || {};
-        FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
-        FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
-        Interview.stopGetData = !!"0";
-        FrsThreadItem.LivePost.data.stopGetData = !!"0";
-    </script>-->
-
-<ul id="thread_list" class="threadlist">
-<li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="5次阅读" class="threadlist_rep_num j_rp_num">5</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0216/11.html" title="织梦中级建站教程 要的留下邮箱" class="j_th_tit">织梦中级建站教程 要的留下邮箱</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">如题...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
-			<span title="发布时间">02-16</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="9次阅读" class="threadlist_rep_num j_rp_num">9</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0215/10.html" title="发帖测试2" class="j_th_tit">发帖测试2</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">发帖测试2...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
-			<span title="发布时间">02-15</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="0次阅读" class="threadlist_rep_num j_rp_num">0</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0215/9.html" title="现在发帖呢" class="j_th_tit">现在发帖呢</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">内容。。。...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
-			<span title="发布时间">02-15</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="199次阅读" class="threadlist_rep_num j_rp_num">199</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0214/5.html" title="发布文档编辑器不显示" class="j_th_tit">发布文档编辑器不显示</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">发布文档编辑器不显示 ，...</div>
-<ul class='threadlist_media j_threadlist_media'><li><div class='vpic_wrap'><img src='/uploads/allimg/130214/1519422261-0-lp.jpg' class='threadlist_pic j_m_pic ' /></div><div class='threadlist_pic_highlight j_m_pic_light'></div></li></ul>				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
-			<span title="发布时间">02-14</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="173次阅读" class="threadlist_rep_num j_rp_num">173</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/plus/view.php?aid=4" title="《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]" class="j_th_tit">《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">A5dedecms织梦建站培训-第1课.zip 51.2MB A5dedecms织梦建站培训-第2课.rar 56.7MB A5dedecms织梦建站培训-第3课.rar 49.1MB A5dedecms织梦建站培训-第4课.rar 29.5MB A5dedecms织梦建站培训-第5课(上).rar 25MB A5dedecms织梦建站培训-第5课(下).zip 67MB A...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
-			<span title="发布时间">02-13</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="132次阅读" class="threadlist_rep_num j_rp_num">132</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0213/3.html" title="谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分" class="j_th_tit">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分 麻烦贡献一下 只为学习 630139444@qq.com...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
-			<span title="发布时间">02-13</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0213/2.html" title="最新织梦dedecms5.7模板调用标签大全" class="j_th_tit">最新织梦dedecms5.7模板调用标签大全</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">织梦ＤＥＤＥ模板调用标签大全-提高制作模板速度 -------------------------------------------------------------------------------- 003 关键描述调用标签： meta name=keywords content={dede:field name=keywords/} 004 meta name=description content=...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
-			<span title="发布时间">02-13</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li><li class="j_thread_list" class="j_thread_list"><div class="threadlist_li_left j_threadlist_li_left">
-	<div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
-</div>
-<div class="threadlist_li_right">
-	<div class="threadlist_lz clearfix">
-		<div class="threadlist_text threadlist_title j_th_tit  notStarList ">
-			<a href="/jiaocheng/2013/0213/1.html" title="让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！" class="j_th_tit">让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！</a>
-			</span>
-			
-		</div>
-		<div class="threadlist_author">
-			<span class="tb_icon_author "></span>
-		</div>
-	</div>
-	<div class="threadlist_detailclearfix">	
-		<div class="threadlist_text">
-			<div class="threadlist_abs threadlist_abs_onlyline">下载地址 留下邮箱 我发给你！！...</div>
-				
-		</div>
-		<div class="threadlist_author">
-                        <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
-			<span title="发布时间">02-13</span>
-		</div>
-	</div>
-</div>
-<div class="clear"></div>
-</li>
-</ul>
-<script>if(typeof PDC != 'undefined'){PDC.mark('thread_list_end');}</script><div id="frs_list_pager" class="pager clearfix">
-<ul>
-共1页/8条记录
-</ul>
-</div></div>        </div>
-		<div id="aside" class="aside">
-			<div class="region_2 sign_mod2" id="sign_mod">
-    <div class="sign_tip_container">
-        <div class="j_succ_info sign_succ2" style="display:none">
-        </div>
-    </div>
-</div>
- 
-
-
-
-
-<div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
-	<div class="region_header">
-		<div class="region_op j_op"> </div>
-		<div class="region_title region_icon j_title">本吧信息</div>
-	</div>
-	<div class="region_cnt">
-		
-
-	<h4>吧主：</h4>
-	<ul>
-			<li>
-  		     Admin
-  		  	</li>
-      <li style="display:none">
-      <span id="tbManagerApply">
-            </span>
-  	</li>
-		<li id="tbManagerCandidatesNum" style="display:none">
-				</li>
-	</ul>
-<h4>欢迎最新会员：</h4>
-<ul>
-	<li>
-	jason
-	</li>
-</ul>
-<h4>共有会员：</h4>
-<ul>
-	<li>
-	2名
-	</li>
-</ul>
-<h4 class="forum_dir_info">今日发布主题：</h4>
-<ul class="forum_dir_info bottom_list">
-	<li>
-篇
-	</li>
-</ul>
-<h4 class="forum_dir_info">本月发布主题：</h4>
-<ul class="forum_dir_info bottom_list">
-	<li>
-11篇
-	</li>
-</ul>
-
-
- 
-	</div>
-	<div class="region_footer"></div>
-</div>
-
-<div id="zyq" class="zyq_2" ><!--STATUS OK-->
-<div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
-<div class="tl">
-	<div class="mod_edit_wrap"></div>
-	<div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">分类</span></div>
-</div>
-<div class="cnt">
-<ul class="zyq_mod_link_items">
-
-<li><a href='/plus/list.php?tid=1'>织梦模板</a></li>
-
-<li><a href='/plus/list.php?tid=2'>织梦教程</a></li>
-
-</ul>
-</div>
-</div><!--STATUS OK-->
-<div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
-	<div class="tl"><div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情链接</span></div>
-	<div class="cnt">
-	
-	<ul class="zyq_mod_friend_items">
-    <li><a href='http://www.dedemao.com'>织梦猫</a></li>
-<li><a href='http://www.dedecms.com' target='_blank'>织梦CMS官方</a> </li><li><a href='http://docs.dedecms.com/' target='_blank'>DedeCMS维基手册</a> </li><li><a href='http://bbs.dedecms.com' target='_blank'>织梦技术论坛</a> </li>
-
-	  
-	</ul>
-	
-	</div>
-</div></div>
-
-	
-		
-
-		</div>
-	</div>	
-</div>
-
-<div id="editor" class="frs_rich_editor">
-<a name="sub"></a>
-<div id="_fatie">
-<form autocomplete="off" method="post" id="pt1361001960036">
-        <div id="edit_parent">
-            <div class="new_tiezi_tip">
-                <div class="editor_title_txt">发表回复</div>
-            </div>
-            <table width="100%" cellspacing="0" cellpadding="3" border="0">
-                <tbody><tr style="display:none;" id="tt1361001960036">
-                    <td width="49" valign="top" nowrap="" style="line-height: 32px; color: rgb(204, 204, 204);">标&#12288;题:</td><td style="color: rgb(204, 204, 204);">
-                        <a name="ju"></a>
-                        <div id="td1361001960036">
-                            <input type="text" value="" class="edit_title_field" name="title" id="title">
-                        </div>
-                        <div class="postErrorTitle"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td width="49" valign="top" nowrap="" style="color: rgb(204, 204, 204);">内&#12288;容:</td>
-                    <td style="color: rgb(204, 204, 204);">
-                        <div style="position:relative;z-index:1000"><div class="editor_tip_show" id="ebt1361001960036"><div class="editor_banned_tip_info">本吧发贴，请先 <a href="/member/login.php">登录</a> | <a href="/member/index_do.php?fmdo=user&dopost=regnew">注册</a>&nbsp;</div></div></div>
-                        <div style="position:relative;" id="eInput1361001960036"><div class="tb-editor-wrapper tb-editor-wrapper-disabled" style="width: 633px;"><div class="tb-editor-overlay" style="display: none;"><span class="close"></span><span class="arrow"></span><div class="overlay-content"></div></div><div class="tb-editor-overlay" style="display: none;"><span class="arrow"></span><div class="overlay-content"></div></div><div class="tb-editor-toolbar tb-editor-toolbar-disabled"><span data-cmd="image" class="image"></span><label></label><span data-cmd="flash" class="flash"></span><label></label><span data-cmd="music" class="music"></span><label></label><span data-cmd="smiley" class="smiley"></span><label></label><span data-cmd="picasso" class="picasso"></span><label></label><span data-cmd="unabled_cut" class="cut_screen"></span></div><div class="tb-editor-editarea-wrapper"><div class="tb-editor-editarea tb-editor-editarea-disabled" style="height: auto; min-height: 193px;"></div></div></div></div>
-
-
-                    </td>
-                </tr>
-
-                <tr>
-                    <td style="color: rgb(204, 204, 204);">&nbsp;</td>
-                    <td class="pt_submit" style="color: rgb(204, 204, 204);">
-                        <input type="submit" value=" 发 表 " class="subbtn_bg" disabled="disabled">
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-        </div>
-
-    </form>
-</div>
-</div>
-
-<script language="javascript" type="text/javascript">CheckLogin2();</script>
-<div id="footer">
-Copyright &copy; 2002-2011 DEDECMS. 织梦科技 版权所有<br />
-本套模板由 <a href="http://www.dedemao.com/">织梦猫</a> 仿制
-</div>
-
-</div>
-</div>
-
-<script src="/templets/default/js/tieba.js"></script>
-<!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
-<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
-
-<script src="/templets/default/js/tieba2.js"></script>
-<!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
-
-
-<script>
-	   _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version){			
-			var frsNavParams = {
-				forum : {
-					id : 1400850,
-					name :'织梦',
-					name_u :'%D6%AF%C3%CE',
-					forbid_flag : 0				},
-				page : "main",
-				type : "album",
-				tbs : ''
-			};  	  
-			_.Module.use('common/widget/Tbnav', ['frs_nav',frsNavParams,version], function(){
-					common.Tbnav.run();
-				});
-		});	
-    $(document).ready(function(){
-        $(".signrank_crown").click(function(){
-             Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
-             window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
-             return false;
+    <script language="javascript" type="text/javascript">
+        <!--
+        $(function() {
+            $("a[_for]").mouseover(function() {
+                $(this).parents().children("a[_for]").removeClass("thisclass").parents().children("dd").hide();
+                $(this).addClass("thisclass").blur();
+                $("#" + $(this).attr("_for")).show();
+            });
+            $("a[_for=uc_member]").mouseover();
+            $("a[_for=flink_1]").mouseover();
         });
-    });
-</script>
-<!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
-<script src="/templets/default/js/tieba3.js"></script>
-<script>
-if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
-  TbCom.defaultLogicInit(PageData.user, 'forum');
-}
-</script>
-<!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
-<script id="pageconf_tbskin_version" type="text/html">20130201</script>
-<script>
-	if(!PageData.is_ipad){
-		(function() {
-			var forumSkinId = 202;
-			//创建一个全局的userSkinManager，用于页面皮肤设置操作
-			var userSkinManager = window.userSkinManager = new UserSkinManager();
-			userSkinManager.init({skinId:forumSkinId, forumId:1400850}); 
-		})();
-	}
-</script>
 
-<script>
-	if(!PageData.is_ipad){
-		window.Common_GoTop();
-	}
-</script>
+        function CheckLogin() {
+            var taget_obj = document.getElementById('_userlogin');
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            myajax.SendGet2("/member/ajax_loginsta.php");
+            DedeXHTTP = null;
+        }
+
+        function CheckLogin2() {
+            var taget_obj = document.getElementById('_fatie');
+            myajax = new DedeAjax(taget_obj, false, false, '', '', '');
+            myajax.SendGet2("/member/ajax_fatie.php");
+            DedeXHTTP = null;
+        }
+        -->
+    </script>
+    <div id="com_userbar" style="z-index: 10005;">
+        <div id="_userlogin">
+            <ul>
+                <li class="u_login">
+                    <a href="/member/login.php">登录</a>
+                </li>
+                <li class="u_reg">
+                    <a href="/member/index_do.php?fmdo=user&amp;dopost=regnew">注册</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script language="javascript" type="text/javascript">
+        CheckLogin();
+    </script>
+    <div id="local_flash_cnt"></div>
+    <div class="wrap1">
+        <div class="wrap2">
+
+            <div class="wrap_clear"></div>
+            <div id="head" class="search search_theme_2 clearfix">
+                <div class="s_nav">
+                    <a href="/" class="s_logo" title="到贴吧首页"></a>
+
+                </div>
+                <div>
+                    <form name="formsearch" action="/plus/search.php">
+                        <input type="hidden" name="kwtype" value="0">
+                        <input size="42" tabindex="1" id="search-keyword" name="q" class="s_ipt i tb_header_search_input" maxlength="100" value="织梦" x-webkit-speech="x-webkit-speech"><span class="s_btn_wr"><input id="search_submit" type="submit" value="吧内搜索" class="s_btn" onmousedown="this.className='s_btn s_btn_h'" onmouseout="this.className='s_btn'"></span>
+                        <span class="s_tools"></span>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div id="container">
+                <div class="above_nav" style="display:none"> </div>
+                <div id="frs_nav" class="frs_nav_3" dr="B">
+                    <div id="frs_nav_wrap" class="nav_wrap">
+                        <ul class="nav_left">
+                            <li class=" first"> <a class="nav_forum_name" href="/" title="织梦吧">织梦吧</a> </li>
+                        </ul>
+                        <ul class="nav_right">
+                            <li class=" first">
+                                <a class="nav_icon refresh" id="refresh" href="&amp;tp=0&amp;pn=0"></a>
+                            </li>
+                            <li class="divide_line"></li>
+                            <li class=" last">
+                                <a class="nav_icon toggle" href="#" id="frs_old_version"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="dir_rank">
+
+                    <div>共有主题：11 个
+                    </div>
+                    <div class="rank_sep"></div>
+                    <div class="week_rank">评论数：<span class="rank_number">14
+    个</span></div>
+                    <div class="rank_sep"></div>
+                    <div class="month_rank">会员数：<span class="rank_number">2名</span></div>
+                </div>
+                <div class="frs_content clearfix">
+                    <div class="contet_wrap" id="contet_wrap">
+                        <div id="content_leftList" class="content_leftList clearfix">
+                            <!--    <script>
+            Interview = window.Interview || {};
+            FrsThreadItem = window.FrsThreadItem || {};
+            FrsThreadItem.LivePost = FrsThreadItem.LivePost || {};
+            FrsThreadItem.LivePost.data = FrsThreadItem.LivePost.data || {};
+            Interview.stopGetData = !!"0";
+            FrsThreadItem.LivePost.data.stopGetData = !!"0";
+        </script>-->
+
+                            <ul id="thread_list" class="threadlist">
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="5次阅读" class="threadlist_rep_num j_rp_num">5</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0216/11.html" title="织梦中级建站教程 要的留下邮箱" class="j_th_tit">织梦中级建站教程 要的留下邮箱</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">如题...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
+                                                <span title="发布时间">02-16</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="9次阅读" class="threadlist_rep_num j_rp_num">9</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0215/10.html" title="发帖测试2" class="j_th_tit">发帖测试2</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">发帖测试2...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
+                                                <span title="发布时间">02-15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="0次阅读" class="threadlist_rep_num j_rp_num">0</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0215/9.html" title="现在发帖呢" class="j_th_tit">现在发帖呢</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">内容。。。...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">jason</span>
+                                                <span title="发布时间">02-15</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="199次阅读" class="threadlist_rep_num j_rp_num">199</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0214/5.html" title="发布文档编辑器不显示" class="j_th_tit">发布文档编辑器不显示</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">发布文档编辑器不显示 ，...</div>
+                                                <ul class="threadlist_media j_threadlist_media">
+                                                    <li>
+                                                        <div class="vpic_wrap"><img src="/uploads/allimg/130214/1519422261-0-lp.jpg" class="threadlist_pic j_m_pic "></div>
+                                                        <div class="threadlist_pic_highlight j_m_pic_light"></div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+                                                <span title="发布时间">02-14</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="173次阅读" class="threadlist_rep_num j_rp_num">173</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/plus/view.php?aid=4" title="《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]" class="j_th_tit">《织梦A5dedecms织梦建站培训--雪毅》(dedecms)5.6[压缩包]</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">A5dedecms织梦建站培训-第1课.zip 51.2MB A5dedecms织梦建站培训-第2课.rar 56.7MB A5dedecms织梦建站培训-第3课.rar 49.1MB A5dedecms织梦建站培训-第4课.rar 29.5MB A5dedecms织梦建站培训-第5课(上).rar 25MB A5dedecms织梦建站培训-第5课(下).zip 67MB A...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+                                                <span title="发布时间">02-13</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="132次阅读" class="threadlist_rep_num j_rp_num">132</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0213/3.html" title="谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分" class="j_th_tit">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">谁有Monkey录制的织梦仿站教程的 含初级、中级、高级三部分 麻烦贡献一下 只为学习 630139444@qq.com...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+                                                <span title="发布时间">02-13</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0213/2.html" title="最新织梦dedecms5.7模板调用标签大全" class="j_th_tit">最新织梦dedecms5.7模板调用标签大全</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">织梦ＤＥＤＥ模板调用标签大全-提高制作模板速度 -------------------------------------------------------------------------------- 003 关键描述调用标签： meta name=keywords content={dede:field name=keywords/} 004 meta name=description content=...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+                                                <span title="发布时间">02-13</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                                <li class="j_thread_list">
+                                    <div class="threadlist_li_left j_threadlist_li_left">
+                                        <div title="79次阅读" class="threadlist_rep_num j_rp_num">79</div>
+                                    </div>
+                                    <div class="threadlist_li_right">
+                                        <div class="threadlist_lz clearfix">
+                                            <div class="threadlist_text threadlist_title j_th_tit  notStarList ">
+                                                <a href="/jiaocheng/2013/0213/1.html" title="让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！" class="j_th_tit">让收费模板去死吧，华夏安全网免费发布织梦仿站18课！！</a>
+
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author "></span>
+                                            </div>
+                                        </div>
+                                        <div class="threadlist_detailclearfix">
+                                            <div class="threadlist_text">
+                                                <div class="threadlist_abs threadlist_abs_onlyline">下载地址 留下邮箱 我发给你！！...</div>
+
+                                            </div>
+                                            <div class="threadlist_author">
+                                                <span class="tb_icon_author_rely j_replyer" title="发布者">admin</span>
+                                                <span title="发布时间">02-13</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </li>
+                            </ul>
+                            <script>
+                                if (typeof PDC != 'undefined') {
+                                    PDC.mark('thread_list_end');
+                                }
+                            </script>
+                            <div id="frs_list_pager" class="pager clearfix">
+                                <ul>
+                                    共1页/8条记录
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="aside" class="aside">
+                        <div class="region_2 sign_mod2" id="sign_mod">
+                            <div class="sign_tip_container">
+                                <div class="j_succ_info sign_succ2" style="display:none">
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                        <div id="forumInfoPanel" class="region_3 forum_info_2" data-region="">
+                            <div class="region_header">
+                                <div class="region_op j_op"> </div>
+                                <div class="region_title region_icon j_title">本吧信息</div>
+                            </div>
+                            <div class="region_cnt">
+
+
+                                <h4>吧主：</h4>
+                                <ul>
+                                    <li>
+                                        Admin
+                                    </li>
+                                    <li style="display:none">
+                                        <span id="tbManagerApply">
+                </span>
+                                    </li>
+                                    <li id="tbManagerCandidatesNum" style="display:none">
+                                    </li>
+                                </ul>
+                                <h4>欢迎最新会员：</h4>
+                                <ul>
+                                    <li>
+                                        jason
+                                    </li>
+                                </ul>
+                                <h4>共有会员：</h4>
+                                <ul>
+                                    <li>
+                                        2名
+                                    </li>
+                                </ul>
+                                <h4 class="forum_dir_info">今日发布主题：</h4>
+                                <ul class="forum_dir_info bottom_list">
+                                    <li>
+                                        篇
+                                    </li>
+                                </ul>
+                                <h4 class="forum_dir_info">本月发布主题：</h4>
+                                <ul class="forum_dir_info bottom_list">
+                                    <li>
+                                        11篇
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+                            <div class="region_footer"></div>
+                        </div>
+
+                        <div id="zyq" class="zyq_2">
+                            <!--STATUS OK-->
+                            <div class="mod j_editable" id="zyq_mod_link" data-mod_type="link">
+                                <div class="tl">
+                                    <div class="mod_edit_wrap"></div>
+                                    <div class="zyq_mod_icon zyq_mod_title"><span class="j_mod_tit">分类</span></div>
+                                </div>
+                                <div class="cnt">
+                                    <ul class="zyq_mod_link_items">
+
+                                        <li><a href="/plus/list.php?tid=1">织梦模板</a></li>
+
+                                        <li><a href="/plus/list.php?tid=2">织梦教程</a></li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--STATUS OK-->
+                            <div class="mod j_editable" id="zyq_mod_friend" data-mod_type="friend">
+                                <div class="tl">
+                                    <div class="mod_edit_wrap"></div><span class="zyq_mod_title">友情链接</span></div>
+                                <div class="cnt">
+
+                                    <ul class="zyq_mod_friend_items">
+                                        <li><a href="http://www.dedemao.com">织梦猫</a></li>
+                                        <li><a href="http://www.dedecms.com" target="_blank">织梦CMS官方</a> </li>
+                                        <li><a href="http://docs.dedecms.com/" target="_blank">DedeCMS维基手册</a> </li>
+                                        <li><a href="http://bbs.dedecms.com" target="_blank">织梦技术论坛</a> </li>
+
+
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="editor" class="frs_rich_editor">
+                <a name="sub"></a>
+                <div id="_fatie">
+                    <form autocomplete="off" method="post" id="pt1361001960036">
+                        <div id="edit_parent">
+                            <div class="new_tiezi_tip">
+                                <div class="editor_title_txt">发表回复</div>
+                            </div>
+                            <table width="100%" cellspacing="0" cellpadding="3" border="0">
+                                <tbody>
+                                    <tr style="display:none;" id="tt1361001960036">
+                                        <td width="49" valign="top" nowrap="" style="line-height: 32px; color: rgb(204, 204, 204);">标　题:</td>
+                                        <td style="color: rgb(204, 204, 204);">
+                                            <a name="ju"></a>
+                                            <div id="td1361001960036">
+                                                <input type="text" value="" class="edit_title_field" name="title" id="title">
+                                            </div>
+                                            <div class="postErrorTitle"></div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="49" valign="top" nowrap="" style="color: rgb(204, 204, 204);">内　容:</td>
+                                        <td style="color: rgb(204, 204, 204);">
+                                            <div style="position:relative;z-index:1000">
+                                                <div class="editor_tip_show" id="ebt1361001960036">
+                                                    <div class="editor_banned_tip_info">本吧发贴，请先 <a href="/member/login.php">登录</a> | <a href="/member/index_do.php?fmdo=user&amp;dopost=regnew">注册</a>&nbsp;</div>
+                                                </div>
+                                            </div>
+                                            <div style="position:relative;" id="eInput1361001960036">
+                                                <div class="tb-editor-wrapper tb-editor-wrapper-disabled" style="width: 633px;">
+                                                    <div class="tb-editor-overlay" style="display: none;"><span class="close"></span><span class="arrow"></span>
+                                                        <div class="overlay-content"></div>
+                                                    </div>
+                                                    <div class="tb-editor-overlay" style="display: none;"><span class="arrow"></span>
+                                                        <div class="overlay-content"></div>
+                                                    </div>
+                                                    <div class="tb-editor-toolbar tb-editor-toolbar-disabled"><span data-cmd="image" class="image"></span><label></label><span data-cmd="flash" class="flash"></span><label></label><span data-cmd="music" class="music"></span><label></label><span data-cmd="smiley"
+                                                            class="smiley"></span><label></label><span data-cmd="picasso" class="picasso"></span><label></label><span data-cmd="unabled_cut" class="cut_screen"></span></div>
+                                                    <div class="tb-editor-editarea-wrapper">
+                                                        <div class="tb-editor-editarea tb-editor-editarea-disabled" style="height: auto; min-height: 193px;"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="color: rgb(204, 204, 204);">&nbsp;</td>
+                                        <td class="pt_submit" style="color: rgb(204, 204, 204);">
+                                            <input type="submit" value=" 发 表 " class="subbtn_bg" disabled="disabled">
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+            <script language="javascript" type="text/javascript">
+                CheckLogin2();
+            </script>
+            <div id="footer">
+                Copyright &#169; 2002-2011 DEDECMS. 织梦科技 版权所有<br> 本套模板由 <a href="http://www.dedemao.com/">织梦猫</a> 仿制
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/templets/default/js/tieba.js"></script>
+    <!--<script src="http://tb1.bdstatic.com/tb/static-common/js/tb_ui_be010f92.js"></script>-->
+    <!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+
+    <script src="/templets/default/js/tieba2.js"></script>
+    <!-- [!MARK][DO NOT DEL]NORMAL LOGIC -->
+
+
+    <script>
+        _.Module.use('common/widget/tbnav/TbnavVersion', [1400850], function(version) {
+            var frsNavParams = {
+                forum: {
+                    id: 1400850,
+                    name: '织梦',
+                    name_u: '%D6%AF%C3%CE',
+                    forbid_flag: 0
+                },
+                page: "main",
+                type: "album",
+                tbs: ''
+            };
+            _.Module.use('common/widget/Tbnav', ['frs_nav', frsNavParams, version], function() {
+                common.Tbnav.run();
+            });
+        });
+        $(document).ready(function() {
+            $(".signrank_crown").click(function() {
+                Stats.sendRequest('fr=tb0_forum&st_mod=frs&st_type=sign_crown_entr');
+                window.open("/sign/index?kw=%D6%AF%C3%CE&type=1");
+                return false;
+            });
+        });
+    </script>
+    <!-- [!MARK][DO NOT DEL]IMPORTANT LOGI -->
+    <script src="/templets/default/js/tieba3.js"></script>
+    <script>
+        if (typeof(PageData) !== "undefined" && typeof(PageData.user) !== "undefined") {
+            TbCom.defaultLogicInit(PageData.user, 'forum');
+        }
+    </script>
+    <!-- [!MARK][DO NOT DEL]OPTIONAL LOGIC -->
+    <script id="pageconf_tbskin_version" type="text/html">20130201</script>
+    <script>
+        if (!PageData.is_ipad) {
+            (function() {
+                var forumSkinId = 202;
+                //创建一个全局的userSkinManager，用于页面皮肤设置操作
+                var userSkinManager = window.userSkinManager = new UserSkinManager();
+                userSkinManager.init({
+                    skinId: forumSkinId,
+                    forumId: 1400850
+                });
+            })();
+        }
+    </script>
+
+    <script>
+        if (!PageData.is_ipad) {
+            window.Common_GoTop();
+        }
+    </script>
+    <a id="goTop" class="goTop goTop_self" href="#" style=""></a>
+    <a id="goTop" class="goTop goTop_self goTop_1024" href="#" style=""></a>
+
+
+
 </body>
+
 </html>
